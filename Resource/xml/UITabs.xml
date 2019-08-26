@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Tabs>
+    <TabItem>
+      <Token><![CDATA[ProductRoadmap]]></Token>
+      <Title><![CDATA[Product Roadmap]]></Title>
+      <Src><![CDATA[ViewDisplay_ProductRoadmap.ascx]]></Src>
+      <Icon><![CDATA[fa clip-stack-2]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[GameSheets]]></Token>
+      <Title><![CDATA[Game Sheets]]></Title>
+      <Src><![CDATA[ViewDisplay_GameSheets.ascx]]></Src>
+      <Icon><![CDATA[fa clip-stack-2]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Downloads]]></Token>
+      <Title><![CDATA[Downloads]]></Title>
+      <Src><![CDATA[ViewDisplay_Downloads.ascx]]></Src>
+      <Icon><![CDATA[fa clip-stack-2]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Campaigns]]></Token>
+      <Title><![CDATA[Campaigns]]></Title>
+      <Src><![CDATA[ViewDisplay_Campaigns.ascx]]></Src>
+      <Icon><![CDATA[fa clip-stack-2]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Events]]></Token>
+      <Title><![CDATA[Events]]></Title>
+      <Src><![CDATA[ViewDisplay_Events.ascx]]></Src>
+      <Icon><![CDATA[fa clip-stack-2]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[MyAccount]]></Token>
+      <Title><![CDATA[My Account]]></Title>
+      <Src><![CDATA[ViewDisplay_MyAccount.ascx]]></Src>
+      <Icon><![CDATA[fa clip-stack-2]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Help]]></Token>
+      <Title><![CDATA[Help]]></Title>
+      <Src><![CDATA[ViewDisplay_Help.ascx]]></Src>
+      <Icon><![CDATA[fa clip-stack-2]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    
+    
+    
+     
+
+     
+    
+    
+    
+  </Tabs>
+</Playngo_ClientZone>

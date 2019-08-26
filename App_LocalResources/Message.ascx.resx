@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeleteEventError.Message" xml:space="preserve">
+    <value>Delete Item :{0} successfully.</value>
+  </data>
+  <data name="DeleteEventSuccess.Message" xml:space="preserve">
+    <value>Delete Item :{0} successfully.</value>
+  </data>
+  <data name="DeleteCategoryError.Message" xml:space="preserve">
+    <value>Delete category :{0} Failure.</value>
+  </data>
+  <data name="DeleteCategorySuccess.Message" xml:space="preserve">
+    <value>Delete category :{0} successfully.</value>
+  </data>
+  <data name="DeleteTagError.Message" xml:space="preserve">
+    <value>Delete tag item :{0} Failure.</value>
+  </data>
+  <data name="DeleteTagSuccess.Message" xml:space="preserve">
+    <value>Delete tag item :{0} successfully.</value>
+  </data>
+  <data name="DeleteThemeError.Message" xml:space="preserve">
+    <value>Delete theme item :{0} Failure.</value>
+  </data>
+  <data name="DeleteThemeSuccess.Message" xml:space="preserve">
+    <value>Delete theme item :{0} successfully.</value>
+  </data>
+  <data name="Email_CommentReplyTitle.EmailText" xml:space="preserve">
+    <value>[{0} Comment reply notification]Re:{1}</value>
+  </data>
+  <data name="Email_CommentTitle.EmailText" xml:space="preserve">
+    <value>[{0} Comment Notification]Re:{1}</value>
+  </data>
+  <data name="EnabledThemeSuccess.Message" xml:space="preserve">
+    <value>Activation theme  successfully.</value>
+  </data>
+  <data name="LicenseStatus.Message" xml:space="preserve">
+    <value>Your authorization will become invalid in {0} days.</value>
+    <comment>Your authorization will become invalid in {0} days.</comment>
+  </data>
+  <data name="NoModuleSetting.Message" xml:space="preserve">
+    <value>Click [Settings] button to set the relationship between the current module and data module</value>
+  </data>
+  <data name="NoTemplate.Message" xml:space="preserve">
+    <value>Not set a template item. </value>
+  </data>
+  <data name="SaveError.Message" xml:space="preserve">
+    <value>Save Data Item :{0} Failure.</value>
+  </data>
+  <data name="SaveSuccess.Message" xml:space="preserve">
+    <value>Save Data Item :{0} successfully.</value>
+  </data>
+  <data name="SaveCategoryError.Message" xml:space="preserve">
+    <value>Save category :{0} Failure.</value>
+  </data>
+  <data name="SaveCategorySuccess.Message" xml:space="preserve">
+    <value>Save category :{0} successfully.</value>
+  </data>
+  <data name="SaveLicenseSuccess.Message" xml:space="preserve">
+    <value>Save authorization code :{0} successfully.</value>
+    <comment>Save authorization code :{0} successfully.</comment>
+  </data>
+  <data name="SaveTagError.Message" xml:space="preserve">
+    <value>Save tag :{0} Failure.</value>
+  </data>
+  <data name="SaveTagSuccess.Message" xml:space="preserve">
+    <value>Save tag :{0} successfully.</value>
+  </data>
+  <data name="SaveThemeError.Message" xml:space="preserve">
+    <value>Save theme :{0} Failure.</value>
+  </data>
+  <data name="SaveThemeFileSuccess.Message" xml:space="preserve">
+    <value>File edited successfully.</value>
+  </data>
+  <data name="SaveThemeSuccess.Message" xml:space="preserve">
+    <value>Save theme :{0} successfully.</value>
+  </data>
+  <data name="ThemeGoUrl.Message" xml:space="preserve">
+    <value>Click [&lt;a href="[ThemeUrl]"&gt;Redirect&lt;/a&gt;] to theme interface and load default theme.</value>
+  </data>
+  <data name="UpdateSettingsSuccess.Message" xml:space="preserve">
+    <value>Update Settings succeed.</value>
+  </data>
+  <data name="UpLoadError.Message" xml:space="preserve">
+    <value>upload file:{0}  Failure.</value>
+  </data>
+  <data name="UpLoadNonempty.Message" xml:space="preserve">
+    <value>Please select a file to upload.</value>
+  </data>
+  <data name="UpLoadSuccess.Message" xml:space="preserve">
+    <value>upload file:{0}  successfully.</value>
+  </data>
+  <data name="GridViewEmpty.Message" xml:space="preserve">
+    <value>No data in the list.</value>
+  </data>
+  <data name="DeleteCommentError.Message" xml:space="preserve">
+    <value>Delete Comment item :{0} Failure.</value>
+  </data>
+  <data name="DeleteCommentSuccess.Message" xml:space="preserve">
+    <value>Delete Comment item :{0} successfully.</value>
+  </data>
+  <data name="LoadingEventError.Message" xml:space="preserve">
+    <value>Errors occured when downloading the Event, the Event has been deteted.</value>
+  </data>
+  <data name="NoPermissionEventAlert.Message" xml:space="preserve">
+    <value>You are not allowed to edit Events from other authors.</value>
+  </data>
+  <data name="EnabledFilterServiceSuccess.Message" xml:space="preserve">
+    <value>Activation Filter Service successfully.</value>
+  </data>
+  <data name="RefreshFilterServiceSuccess.Message" xml:space="preserve">
+    <value>Refresh Filter Service:{0}  successfully.</value>
+  </data>
+  <data name="ImportEventExtensionError.Message" xml:space="preserve">
+    <value>Extension error occured for the imported file, only xml file permitted.</value>
+  </data>
+  <data name="ImportEventNullError.Message" xml:space="preserve">
+    <value>No file uploaded, file imported failed,</value>
+  </data>
+  <data name="ImportEventSuccess.Message" xml:space="preserve">
+    <value>{0} Events are imported successfully.</value>
+  </data>
+  <data name="ExportEventError.Message" xml:space="preserve">
+    <value>No Item can be exported.</value>
+  </data>
+  <data name="SubscribeEmailTemplate_Content.Template" xml:space="preserve">
+    <value>&lt;table width="100%" border="0" cellpadding="0" cellspacing="0" style="background: #ddd;"&gt;
+	&lt;tr&gt;
+    	&lt;td valign="top" style="padding:10px;"&gt;
+        	&lt;table align="center" width="600"  border="0" cellpadding="0" cellspacing="0"&gt;
+            	&lt;tr&gt;
+                	&lt;td align="center" style="background: #ffffcf; padding:5px 0px; font-family:Arial; color:#000; font-size:13px;"&gt;Email not displaying correctly? &lt;a href="[EventUrl]"&gt;View it&lt;/a&gt; in your browser&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                	&lt;td valign="top" style="background:#fff"&gt;
+                    	&lt;table width="100%" cellpadding="0" cellspacing="0"&gt;
+                            &lt;tr&gt;
+                            	&lt;td valign="top" style="padding:20px;"&gt;
+                                	&lt;h1 style="color: rgb(0, 0, 0); font-family: Arial; font-size: 18px; line-height:24px; text-align: left; margin:0px 0px 10px 0px;"&gt;&lt;a href="[EventUrl]"&gt;[Title]&lt;/a&gt;&lt;/h1&gt;
+                                    &lt;div style="color:#000000;font-family:Arial;font-size:12px;line-height:140%;margin:0px 0px 10px 0px;"&gt;&lt;a href="[AuthorUrl]"&gt;[Author]&lt;/a&gt; Evented on [StartTime]&lt;/div&gt;
+                                    &lt;div&gt;
+					[ThumbnailUrl]
+                                    	[Summary] &lt;a href="[EventUrl]"&gt;read more&lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;                    	
+                        &lt;/table&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                	&lt;td valign="top" style="background: #f1f1f1;"&gt;
+                    	&lt;table width="100%" cellpadding="0" cellspacing="0" border="0"&gt;
+                        	&lt;tr&gt;
+                            	&lt;td valign="top" style="color:#000000;font-size:12px;padding:20px;font-family:Arial;"&gt; &lt;a href="[Unsubscribe]"&gt;Unsubscribe&lt;/a&gt;&lt;/td&gt;
+                                &lt;td valign="top" style="color:#000000;font-size:12px;padding:20px;font-family:Arial;"&gt;
+					&lt;a href="http://[WebSiteUrl]"&gt;[WebSite]&lt;/a&gt;&lt;br/&gt;
+					&lt;a href="http://[WebSiteUrl]"&gt;http://[WebSiteUrl]&lt;/a&gt;
+				&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</value>
+  </data>
+  <data name="SubscribeEmailTemplate_Subject.Template" xml:space="preserve">
+    <value>Published a new Event: [Title]</value>
+  </data>
+  <data name="SubscribeError.Message" xml:space="preserve">
+    <value>Subscribe unsuccessful, has subscribed or for other reasons</value>
+  </data>
+  <data name="SubscribeSuccess.Message" xml:space="preserve">
+    <value>Subscribe successfully.</value>
+  </data>
+  <data name="UnsubscribeSuccess.Message" xml:space="preserve">
+    <value>Unsubscribe successfully.</value>
+  </data>
+  <data name="SaveSkinSuccess.Message" xml:space="preserve">
+    <value>Save skin :{0} successfully.</value>
+  </data>
+  <data name="DeleteMediaLibraryError.Message" xml:space="preserve">
+    <value>Delete file :{0} Failure.</value>
+  </data>
+  <data name="DeleteMediaLibrarySuccess.Message" xml:space="preserve">
+    <value>Delete file :{0} successfully.</value>
+  </data>
+  <data name="DeleteSubscriptionError.Message" xml:space="preserve">
+    <value>Delete subscription :{0} Failure.</value>
+  </data>
+  <data name="DeleteSubscriptionSuccess.Message" xml:space="preserve">
+    <value>Delete subscription :{0} successfully.</value>
+  </data>
+  <data name="ApplyStatusSuccess.Message" xml:space="preserve">
+    <value>The record state you selected has been changed to {0}.</value>
+  </data>
+  <data name="SaveStyleSuccess.Message" xml:space="preserve">
+    <value>File edited successfully.</value>
+  </data>
+  <data name="SaveSubscriptionError.Message" xml:space="preserve">
+    <value>Save subscription email&amp;role :{0} Failure.</value>
+  </data>
+  <data name="SaveSubscriptionSuccess.Message" xml:space="preserve">
+    <value>Save subscription email&amp;role :{0} successfully.</value>
+  </data>
+  <data name="SendMailSuccess.Message" xml:space="preserve">
+    <value>send email {0}  successfully.</value>
+  </data>
+  <data name="SubscribeListEmailTemplate_Content.Template" xml:space="preserve">
+    <value>&lt;table width="100%" border="0" cellpadding="0" cellspacing="0" style="background: #ddd;"&gt;
+	&lt;tr&gt;
+    	&lt;td valign="top" style="padding:10px;"&gt;
+        	&lt;table align="center" width="600"  border="0" cellpadding="0" cellspacing="0"&gt;
+            	&lt;tr&gt;
+                	&lt;td align="center" style="background: #ffffcf; padding:5px 0px; font-family:Arial; color:#000; font-size:13px;"&gt;Email not displaying correctly? &lt;a href="[EventListUrl]"&gt;View it&lt;/a&gt; in your browser&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                	&lt;td valign="top" style="background:#fff"&gt;
+                    	[EventList]
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                	&lt;td valign="top" style="background: #f1f1f1;"&gt;
+                    	&lt;table width="100%" cellpadding="0" cellspacing="0" border="0"&gt;
+                        	&lt;tr&gt;
+                                &lt;td valign="top" style="color:#000000;font-size:12px;padding:20px;font-family:Arial;"&gt;[WebSite]&lt;br/&gt; http://[WebSiteUrl]&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</value>
+  </data>
+  <data name="SubscribeListEmailTemplate_Content_Items.Template" xml:space="preserve">
+    <value>&lt;table width="100%" cellpadding="0" cellspacing="0"&gt;
+                            &lt;tr&gt;
+                            	&lt;td valign="top" style="padding:20px;"&gt;
+                                	&lt;h1 style="color: rgb(0, 0, 0); font-family: Arial; font-size: 18px; line-height:24px; text-align: left; margin:0px 0px 10px 0px;"&gt;&lt;a href="[EventUrl]"&gt;[Title]&lt;/a&gt;&lt;/h1&gt;
+                                    &lt;div style="color:#000000;font-family:Arial;font-size:12px;line-height:140%;margin:0px 0px 10px 0px;"&gt;&lt;a href="[AuthorUrl]"&gt;[Author]&lt;/a&gt; Evented on [StartTime]&lt;/div&gt;
+                                    &lt;div&gt;
+					[ThumbnailUrl]
+                                    	[Summary] &lt;a href="[EventUrl]"&gt;read more&lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;                    	
+                        &lt;/table&gt;</value>
+  </data>
+  <data name="SubscribeListEmailTemplate_Subject.Template" xml:space="preserve">
+    <value>Published [EventCount] new Event</value>
+  </data>
+  <data name="SaveSubscriptionAlready.Message" xml:space="preserve">
+    <value>Save subscription email&amp;role :{0} Failure, data already exist.</value>
+  </data>
+  <data name="SynchronizeFilesError.Message" xml:space="preserve">
+    <value>Fail to synchronize files or folder has no files.</value>
+  </data>
+  <data name="SynchronizeFilesSuccess.Message" xml:space="preserve">
+    <value>You have succeeded in synchronizing {0} files.</value>
+  </data>
+  <data name="NoModuleSettingLink.Message" xml:space="preserve">
+    <value>&lt;a href="{0}"&gt;[Settings]&lt;/a&gt;</value>
+  </data>
+  <data name="EventInfo_NoPublic.Message" xml:space="preserve">
+    <value>You don’t have permission to access this Event, please click on return.</value>
+  </data>
+  <data name="EventInfo_NoPublished.Message" xml:space="preserve">
+    <value>The Item you are accessing has not been released or expired, please click on return.</value>
+  </data>
+  <data name="EventInfo_Remove.Message" xml:space="preserve">
+    <value>Fail to find the Item, or it has been deleted, please click on return.</value>
+  </data>
+  <data name="UnknownError.Message" xml:space="preserve">
+    <value>Unknown error, please click on return.</value>
+  </data>
+  <data name="UpdateAttendingError.Message" xml:space="preserve">
+    <value>Update for the attending status of the event registration is failure.</value>
+  </data>
+  <data name="UpdateAttendingSuccess.Message" xml:space="preserve">
+    <value>Update for the attending status of the event registration is successfully.</value>
+  </data>
+  <data name="UploadFieldExtensionError.Message" xml:space="preserve">
+    <value>The type of the file you uploaded doesn't t meet the requirements, only the '{0}' files are allowed to be uploaded.</value>
+  </data>
+  <data name="AddUserRolesSuccess.Message" xml:space="preserve">
+    <value>user {0} has been associated with roles: {1}</value>
+  </data>
+  <data name="CopyCampaignError.Message" xml:space="preserve">
+    <value>Copy Item: "{0}" failure.</value>
+  </data>
+  <data name="CopyCampaignSuccess.Message" xml:space="preserve">
+    <value>Copy Item: "{0}" successfully.</value>
+  </data>
+  <data name="CopyGameSheetError.Message" xml:space="preserve">
+    <value>Copy Item: "{0}" failure.</value>
+  </data>
+  <data name="CopyGameSheetSuccess.Message" xml:space="preserve">
+    <value>Copy Item: "{0}" successfully.</value>
+  </data>
+  <data name="ChangeGroupRolesSuccess.Message" xml:space="preserve">
+    <value>Changing roles in grouping {0}: {1}.</value>
+  </data>
+</root>

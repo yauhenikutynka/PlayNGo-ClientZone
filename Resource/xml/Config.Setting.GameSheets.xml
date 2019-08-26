@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Settings>
+
+    <Setting>
+      <Name><![CDATA[FriendlyUrl]]></Name>
+      <Alias><![CDATA[Friendly Url]]></Alias>
+      <Width><![CDATA[450]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[false]]></Required>
+      <Verification><![CDATA[onlyLetterNumber]]></Verification>
+      <Group><![CDATA[SEO Options]]></Group>
+      <Categories><![CDATA[SEO Options]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+    
+
+    <Setting>
+      <Name><![CDATA[IncludeRoadmap]]></Name>
+      <Alias><![CDATA[Include in Roadmap]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Roadmap Options ]]></Group>
+      <Categories><![CDATA[Roadmap Options ]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Image]]></Name>
+      <Alias><![CDATA[Icon]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[Urls]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[U,F]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[true]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Roadmap Options ]]></Group>
+      <Categories><![CDATA[Roadmap Options ]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Summary]]></Name>
+      <Alias><![CDATA[Summary]]></Alias>
+      <Width><![CDATA[550]]></Width>
+      <Rows><![CDATA[5]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Roadmap Options ]]></Group>
+      <Categories><![CDATA[Roadmap Options ]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+
+
+    <Setting>
+      <Name><![CDATA[Confidentiality]]></Name>
+      <Alias><![CDATA[Confidentiality]]></Alias>
+      <Width><![CDATA[400]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Game Information]]></Group>
+      <Categories><![CDATA[Game Information]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Createdby]]></Name>
+      <Alias><![CDATA[Created by]]></Alias>
+      <Width><![CDATA[400]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Game Information]]></Group>
+      <Categories><![CDATA[Game Information]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Ownedby]]></Name>
+      <Alias><![CDATA[Owned by]]></Alias>
+      <Width><![CDATA[400]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Game Information]]></Group>
+      <Categories><![CDATA[Game Information]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[ApprovedId]]></Name>
+      <Alias><![CDATA[Approved ID]]></Alias>
+      <Width><![CDATA[400]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Game Information]]></Group>
+      <Categories><![CDATA[Game Information]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[DocumentId]]></Name>
+      <Alias><![CDATA[Document ID]]></Alias>
+      <Width><![CDATA[400]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Game Information]]></Group>
+      <Categories><![CDATA[Game Information]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+
+
+
+    <Setting>
+      <Name><![CDATA[PDFGenerator]]></Name>
+      <Alias><![CDATA[PDF Generator]]></Alias>
+      <Width><![CDATA[550]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[Game Sheet]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Buttons]]></Group>
+      <Categories><![CDATA[Buttons]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[DownloadFiles]]></Name>
+      <Alias><![CDATA[Download Files]]></Alias>
+      <Width><![CDATA[550]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[Promo Pack]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Buttons]]></Group>
+      <Categories><![CDATA[Buttons]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[EnableDownloadFiles]]></Name>
+      <Alias><![CDATA[Enable Download Files]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Buttons]]></Group>
+      <Categories><![CDATA[Buttons]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+  </Settings>
+
+</Playngo_ClientZone>
+
+
+

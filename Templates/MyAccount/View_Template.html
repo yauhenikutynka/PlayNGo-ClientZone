@@ -1,0 +1,112 @@
+﻿<div class="client-content-myaccount client-zone-ajax" data-ajaxurl="${xf.GoAjaxUpdateMyAccount()}">
+
+    <div class="client-zone-breadcrumb">
+        <a href=""><span class="fa fa-home"></span>My Account</a>
+    </div><!-- client-zone-breadcrumb End -->
+
+    <div class="client-zone-account">
+        <h3>${xf.ShowUserProfile($UserInfo,"FirstName")} ${xf.ShowUserProfile($UserInfo,"LastName")} Account</h3>
+        <div class="account-setting row">
+            <div class="item col-sm-5">
+                <span>Account Settings</span>
+                <ul class="account-setting-list clearfix">
+                    <li>
+                        <label for="Email">Email</label>
+                        <input id="Email" name="Email" type="email" value="${xf.ViewUser($UserInfo,"Email","")}" placeholder="Email Address" readonly="readonly" />
+                    </li>
+                    <li>
+                        <label for="FirstName">Name</label>
+                        <input id="FirstName" name="FirstName" type="text" value="${xf.ShowUserProfile($UserInfo,"FirstName")}" placeholder="First Name" />
+                    </li>
+                    <li>
+                        <label for="LastName">Surname</label>
+                        <input id="LastName" name="LastName" type="text" value="${xf.ShowUserProfile($UserInfo,"LastName")}" placeholder="Second Name" />
+                    </li>
+
+                    <li>
+                        <label for="Company">Company</label>
+                        <input id="Company" name="Company" type="text" value="${xf.ShowUserProfile($UserInfo,"Company")}" placeholder="Company Name" />
+                    </li>
+                    <li>
+                        <label for="Password">Password</label>
+                        <input id="Password" name="Password" type="password" value="" placeholder="*******" />
+                    </li>
+                    <li>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input id="confirmPassword" name="confirmPassword" type="password" value="" placeholder="*******" />
+                    </li>
+                </ul>
+            </div>
+            <div class="item col-sm-7">
+                <span>Subscribed Newsletter List</span>
+                <ul class="account-setting-list clearfix">
+                    <li>
+
+                        <input id="setting-all" type="checkbox" name="all" value="all" />
+                        <label for="setting-all">All</label>
+                    </li>
+                    <li>
+                        <input id="Newsletter_GameSheets" name="Newsletter_GameSheets" type="checkbox" value="game" #if(${xf.ShowUserProfile($UserInfo,"Newsletter_GameSheets")}=="True" ) checked="checked" #end />
+                        <label for="Newsletter_GameSheets">Game Sheets</label>
+                    </li>
+                    <li>
+                        <input id="Newsletter_Downloads" name="Newsletter_Downloads" type="checkbox" value="downloads" #if(${xf.ShowUserProfile($UserInfo,"Newsletter_Downloads")}=="True" ) checked="checked" #end />
+                        <label for="Newsletter_Downloads">Downloads</label>
+                    </li>
+                    <li>
+                        <input id="Newsletter_Campaigns" name="Newsletter_Campaigns" type="checkbox" value="campaigns" #if(${xf.ShowUserProfile($UserInfo,"Newsletter_Campaigns")}=="True" ) checked="checked" #end />
+                        <label for="Newsletter_Campaigns">Campaigns</label>
+                    </li>
+                    <li>
+                        <input id="Newsletter_Events" value="Newsletters$3" type="checkbox" name="Newsletter_Events" #if(${xf.ShowUserProfile($UserInfo,"Newsletter_Events")}=="True" ) checked="checked" #end />
+                        <label for="Newsletter_Events">Events</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a id="account-update" class="account-update dg-btn-1 radius-3px btn-accent" href="javascript:;">Update</a>
+    </div><!-- client-zone-account End-->
+    <div class="ajax-loader"></div>
+    <div class="ajax-status"></div>
+</div>
+
+    <!--<script type="text/javascript">
+        $(function ($) {
+            $(".account-update").click(function () {
+                var form = $(".client-zone-account");
+                var json = {
+                    "FirstName": $("input#FirstName").val(),
+                    "LastName": $("input#LastName").val(),
+                    "Company": $("input#Company").val(),
+                    "Password": $("input#Password").val(),
+                    "Newsletter_GameSheets": $("input#Newsletter_GameSheets").is(':checked'),
+                    "Newsletter_Downloads": $("input#Newsletter_Downloads").is(':checked'),
+                    "Newsletter_Campaigns": $("input#Newsletter_Campaigns").is(':checked'),
+                    "Newsletter_Events": $("input#Newsletter_Events").is(':checked')
+                };
+                console.log('json', json);
+                console.log('GoAjaxUpdateMyAccount', "${xf.GoAjaxUpdateMyAccount()}");
+                jQuery.ajax({
+                    url: "${xf.GoAjaxUpdateMyAccount()}",
+                    type: "POST",
+                    data: json,
+                    dataType: "json",
+                    beforeSend: function () {
+                        //$("#ajax-loader").show();
+                        console.log('beforeSend');
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    },
+                    complete: function () {
+                        //$("#ajax-loader").hide();
+                        console.log('complete');
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        $("input#Password").val('');
+                    }
+                });
+            });
+        });
+    </script>-->

@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Manager_Modal_SelectDownloadFiles.ascx.cs" Inherits="Playngo.Modules.ClientZone.Manager_Modal_SelectDownloadFiles" %>
+Manager_Modal_SelectDownloadFiles

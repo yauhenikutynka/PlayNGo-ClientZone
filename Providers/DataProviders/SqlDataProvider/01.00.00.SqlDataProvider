@@ -1,0 +1,463 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+ 
+/** Playngo_ClientZone_Event  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_Event]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Event](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[Title] [nvarchar](512) NULL,
+			[ContentText] [ntext] NULL,
+			[Address] [nvarchar](500) NULL,
+			[LocationX] [nvarchar](50) NOT NULL,
+			[LocationY] [nvarchar](50) NOT NULL,
+			[IncludeRoadmap] [tinyint] NOT NULL,
+			[StartTime] [datetime] NOT NULL,
+			[EndTime] [datetime] NOT NULL,
+			[ReleaseDate] [datetime] NOT NULL,
+			[CreateTime] [datetime] NOT NULL,
+			[CreateUser] [int] NOT NULL,
+			[Per_AllUsers] [tinyint] NOT NULL,
+			[Per_Roles] [ntext] NULL,
+			[Per_AllJurisdictions] [tinyint] NOT NULL,
+			[Per_Jurisdictions] [ntext] NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[Options] [ntext] NULL,
+			[Status] [tinyint] NOT NULL,
+			[NotifyInclude] [tinyint] NOT NULL,
+			[NotifyStatus] [tinyint] NOT NULL,
+			[NotifySubscribers] [tinyint] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+			[UrlSlug] [nvarchar](500) NULL,
+			[SendMail] [int] NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_Event] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+
+
+
+/** Playngo_ClientZone_DownloadFile  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_DownloadFile]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_DownloadFile](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[Title] [nvarchar](512) NULL,
+			[Version] [nvarchar](200) NOT NULL,
+			[GameID] [nvarchar](200) NOT NULL,
+			[FileTypes] [nvarchar](500) NOT NULL,
+			[GameCategories] [nvarchar](500) NOT NULL,
+			[IncludeRoadmap] [tinyint] NOT NULL,
+			[StartTime] [datetime] NOT NULL,
+			[EndTime] [datetime] NOT NULL,
+			[ReleaseDate] [datetime] NOT NULL,
+			[CreateTime] [datetime] NOT NULL,
+			[CreateUser] [int] NOT NULL,
+			[Per_AllUsers] [tinyint] NOT NULL,
+			[Per_Roles] [ntext] NULL,
+			[Per_AllJurisdictions] [tinyint] NOT NULL,
+			[Per_Jurisdictions] [ntext] NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[Options] [ntext] NULL,
+			[Status] [tinyint] NOT NULL,
+			[NotifyInclude] [tinyint] NOT NULL,
+			[NotifyStatus] [tinyint] NOT NULL,
+			[NotifySubscribers] [tinyint] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+			[SendMail] [int] NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_DownloadFile] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+
+
+/** Playngo_ClientZone_GameSheet  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_GameSheet]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_GameSheet](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[Title] [nvarchar](512) NULL,
+			[Version] [nvarchar](200) NOT NULL,
+			[GameID] [nvarchar](200) NOT NULL,
+			[GameCategories] [nvarchar](500) NOT NULL,
+			[IncludeRoadmap] [tinyint] NOT NULL,
+			[StartTime] [datetime] NOT NULL,
+			[EndTime] [datetime] NOT NULL,
+			[ReleaseDate] [datetime] NOT NULL,
+			[CreateTime] [datetime] NOT NULL,
+			[CreateUser] [int] NOT NULL,
+			[Per_AllUsers] [tinyint] NOT NULL,
+			[Per_Roles] [ntext] NULL,
+			[Per_AllJurisdictions] [tinyint] NOT NULL,
+			[Per_Jurisdictions] [ntext] NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[Options] [ntext] NULL,
+			[Files] [ntext] NULL,
+			[Status] [tinyint] NOT NULL,
+			[NotifyInclude] [tinyint] NOT NULL,
+			[NotifyStatus] [tinyint] NOT NULL,
+			[NotifySubscribers] [tinyint] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+			[UrlSlug] [nvarchar](500) NULL,
+			[SendMail] [int] NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_GameSheet] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+
+
+/** Playngo_ClientZone_Campaign  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_Campaign]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Campaign](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[Title] [nvarchar](512) NULL,
+			[Version] [nvarchar](200) NOT NULL,
+			[GameID] [nvarchar](200) NOT NULL,
+			[GameCategories] [nvarchar](500) NOT NULL,
+			[IncludeRoadmap] [tinyint] NOT NULL,
+			[StartTime] [datetime] NOT NULL,
+			[EndTime] [datetime] NOT NULL,
+			[ReleaseDate] [datetime] NOT NULL,
+			[CreateTime] [datetime] NOT NULL,
+			[CreateUser] [int] NOT NULL,
+			[Per_AllUsers] [tinyint] NOT NULL,
+			[Per_Roles] [ntext] NULL,
+			[Per_AllJurisdictions] [tinyint] NOT NULL,
+			[Per_Jurisdictions] [ntext] NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[Options] [ntext] NULL,
+			[Files] [ntext] NULL,
+			[Status] [tinyint] NOT NULL,
+			[NotifyInclude] [tinyint] NOT NULL,
+			[NotifyStatus] [tinyint] NOT NULL,
+			[NotifySubscribers] [tinyint] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+			[UrlSlug] [nvarchar](500) NULL,
+			[SendMail] [int] NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_Campaign] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+
+
+/** Playngo_ClientZone_DynamicModule  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_DynamicModule]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_DynamicModule](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[Title] [nvarchar](512) NOT NULL,
+			[Per_AllUsers] [tinyint] NOT NULL,
+			[Per_Roles] [ntext] NULL,
+			[PDFGenerator] [tinyint] NOT NULL,
+			[IncludeTabLink] [tinyint] NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[Options] [ntext] NULL,
+			[Sort] [int] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+			[LinkID] [int] NOT NULL,
+			[Type] [tinyint] NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_DynamicModule] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+
+
+/** Playngo_ClientZone_DynamicItem  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_DynamicItem]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_DynamicItem](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[DynamicID] [int] NOT NULL,
+			[Title] [nvarchar](512) NOT NULL,
+			[Options] [ntext] NULL,
+			[Sort] [int] NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+			[Type] [tinyint] NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_DynamicItem] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+
+
+
+
+/**  Playngo_ClientZone_CampaignCategory **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_CampaignCategory]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_CampaignCategory](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[ParentID] [int] NOT NULL,
+			[Name] [nvarchar](128) NOT NULL,
+			[ContentText] [ntext] NULL,
+			[Options] [ntext] NULL,
+			[Picture] [nvarchar](512) NOT NULL,
+			[Sort] [int] NOT NULL,
+			[Per_AllUsers] [tinyint] NOT NULL,
+			[Per_Roles] [ntext] NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [nvarchar](50) NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_CampaignCategory] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+
+/**  Playngo_ClientZone_FileType **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_FileType]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_FileType](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[ParentID] [int] NOT NULL,
+			[Name] [nvarchar](128) NOT NULL,
+			[ContentText] [ntext] NULL,
+			[Options] [ntext] NULL,
+			[Picture] [nvarchar](512) NOT NULL,
+			[Sort] [int] NOT NULL,
+			[Per_AllUsers] [tinyint] NOT NULL,
+			[Per_Roles] [ntext] NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [nvarchar](50) NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_FileType] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+
+/**  Playngo_ClientZone_GameCategory **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_GameCategory]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_GameCategory](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[ParentID] [int] NOT NULL,
+			[Name] [nvarchar](128) NOT NULL,
+			[ContentText] [ntext] NULL,
+			[Options] [ntext] NULL,
+			[Picture] [nvarchar](512) NOT NULL,
+			[Sort] [int] NOT NULL,
+			[Per_AllUsers] [tinyint] NOT NULL,
+			[Per_Roles] [ntext] NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [nvarchar](50) NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_GameCategory] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+
+/**  Playngo_ClientZone_Jurisdiction **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_Jurisdiction]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Jurisdiction](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[ParentID] [int] NOT NULL,
+			[Name] [nvarchar](128) NOT NULL,
+			[ContentText] [ntext] NULL,
+			[Options] [ntext] NULL,
+			[Picture] [nvarchar](512) NOT NULL,
+			[Sort] [int] NOT NULL,
+			[Per_AllUsers] [tinyint] NOT NULL,
+			[Per_Roles] [ntext] NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [nvarchar](50) NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_Jurisdiction] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+
+
+
+
+ 
+
+
+/**  Playngo_ClientZone_Files **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_Files]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Files](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[FileName] [nvarchar](128) NOT NULL,
+			[FileMate] [nvarchar](32) NOT NULL,
+			[FilePath] [nvarchar](256) NOT NULL,
+			[FileExtension] [nvarchar](32) NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[Name] [nvarchar](256) NULL,
+			[FileSize] [int] NOT NULL,
+			[ImageWidth] [int] NOT NULL,
+			[ImageHeight] [int] NOT NULL,
+			[Exif] [ntext] NULL,
+			[Status] [tinyint] NOT NULL,
+			[Sort] [int] NOT NULL,
+			[Extension1] [tinyint] NOT NULL,
+			[Extension2] [int] NOT NULL,
+			[Extension3] [nvarchar](512) NULL,
+			[Extension4] [ntext] NULL,
+		 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_Files] PRIMARY KEY CLUSTERED  
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+/** Playngo_ClientZone_Events_Files  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_Events_Files]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Events_Files](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[EventID] [int] NOT NULL,
+			[MultimediaID] [int] NOT NULL,
+			[Type] [tinyint] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_EventFiles] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)  
+END
+GO
+
+
+
+
+/** Playngo_ClientZone_MailSetting  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_MailSetting]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_MailSetting](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[Name] [nvarchar](50) NOT NULL,
+			[language] [nvarchar](50) NOT NULL,
+			[MailTo] [nvarchar](100) NOT NULL,
+			[MailCC] [nvarchar](100) NOT NULL,
+			[MailSubject] [nvarchar](200) NOT NULL,
+			[MailBody] [ntext] NOT NULL,
+			[MailTime] [int] NOT NULL,
+			[MailType] [tinyint] NOT NULL,
+			[CreateTime] [datetime] NOT NULL,
+			[CreateUser] [int] NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[TabID] [int] NOT NULL,
+			[ModulePath] [nvarchar](100) NOT NULL,
+			[Status] [tinyint] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_MailSetting] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)  
+END
+GO
+
+ 
+
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

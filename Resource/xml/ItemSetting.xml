@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Settings>
+
+
+
+
+    <Setting>
+      <Name><![CDATA[TotalScore]]></Name>
+      <Alias><![CDATA[Total rating]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Rating]]></Group>
+      <Categories><![CDATA[Rating]]></Categories>
+    </Setting>
+
+
+    <Setting>
+      <Name><![CDATA[TotalScoreNumber]]></Name>
+      <Alias><![CDATA[Rating number]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Rating]]></Group>
+      <Categories><![CDATA[Rating]]></Categories>
+    </Setting>
+
+
+
+
+
+
+
+    <Setting>
+      <Name><![CDATA[Sitemap_Priority]]></Name>
+      <Alias><![CDATA[Sitemap Priority]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0.5]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[number]]></Verification>
+      <Group><![CDATA[Sitemap Settings]]></Group>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Sitemap_Changefreq]]></Name>
+      <Alias><![CDATA[Sitemap Changefreq]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[daily]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[always,hourly,daily,weekly,monthly,yearly]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Sitemap Settings]]></Group>
+    </Setting>
+
+
+
+    <Setting>
+      <Name><![CDATA[displaygallery]]></Name>
+      <Alias><![CDATA[Display Gallery Image]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[false]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Display Items]]></Group>
+      <Categories><![CDATA[Display Items]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[displayFeatured]]></Name>
+      <Alias><![CDATA[Display Featured Image]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Display Items]]></Group>
+      <Categories><![CDATA[Display Items]]></Categories>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[displayattachments]]></Name>
+      <Alias><![CDATA[Display Attachments]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Display Items]]></Group>
+      <Categories><![CDATA[Display Items]]></Categories>
+    </Setting>
+    <!--
+	  <Setting>
+		  <Name><![CDATA[NeedLogin]]></Name>
+		  <Alias><![CDATA[Need Login]]></Alias>
+		  <Width><![CDATA[100]]></Width>
+		  <Rows><![CDATA[1]]></Rows>
+		  <DefaultValue><![CDATA[false]]></DefaultValue>
+		  <ControlType><![CDATA[CheckBox]]></ControlType>
+		  <Direction><![CDATA[Vertical]]></Direction>
+		  <ListContent><![CDATA[]]></ListContent>
+		  <Description><![CDATA[After turning it on, you will not be able to view Event details until you are logged in.]]></Description>
+		  <Required><![CDATA[False]]></Required>
+		  <Verification><![CDATA[]]></Verification>
+		  <Group><![CDATA[Display Items]]></Group>
+		  <Categories><![CDATA[Display Items]]></Categories>
+	  </Setting>
+-->
+
+  </Settings>
+
+</Playngo_ClientZone>
+
+
+

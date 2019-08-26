@@ -1,0 +1,36 @@
+﻿
+<div class="client-zone-jurisdictions" data-ajaxurl="${xf.GoAjaxUpdateSelectJurisdictions()}" data-ajax-nav="${xf.GoAjaxJSONToNotifyBadges()}" data-servertime="${UtcTime.ToString("MM/dd/yyyy HH:mm:ss")}">
+    <div class="checkbox-box">
+        <div class="item">
+            <span>Jurisdictions:</span>
+            <ul class="checkbox-list checkbox-filter clearfix #if($Module.IsDetail) disable #end">
+                #if($Jurisdictions.Count > 0)
+                    #set($SelectIds = ${xf.GetViewSelectJurisdictions($Jurisdictions)})
+
+                    #foreach($JurisdictionItem in $Jurisdictions)
+                    <li>
+                        <label for="jurisdictions-${JurisdictionItem.ID}">
+                            #if($JurisdictionItem.ID > 0)
+                                #if(${xf.ViewItemSetting(${JurisdictionItem},"IconUrl","")} != "")
+                                <img src="${xf.ViewLinkUrl(${xf.ViewItemSetting(${JurisdictionItem},"IconUrl","")},"")}" title="${JurisdictionItem.Name}" alt="${JurisdictionItem.Name}" />
+                                #end
+                                <span>${JurisdictionItem.Name}</span>
+                            #else
+
+                                #if(${xf.ViewSetting("General.JurisdictionIcon","")} != "")
+                                    <img src="${xf.ViewLinkUrl(${xf.ViewSetting("General.JurisdictionIcon","")},"")}" title="ALL" alt="ALL" />
+                                #end
+                                <span>ALL</span>
+                            #end
+                        </label>
+                       
+                        <input id="jurisdictions-${JurisdictionItem.ID}" name="jurisdictions$${JurisdictionItem.ID}" type="checkbox" value="${JurisdictionItem.ID}" #if(${xf.JurisdictionChecked($SelectIds,${JurisdictionItem})}) checked="checked" #end />
+                    
+                    </li>
+                    #end
+                #end
+            </ul>
+        </div>
+    </div>
+</div>
+

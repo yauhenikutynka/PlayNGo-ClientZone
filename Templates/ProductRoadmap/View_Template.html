@@ -1,0 +1,69 @@
+﻿<div class="client-content-productroadmap client-zone-ajax" data-ajaxurl="${xf.GoAjaxJSONToProductRoadmap()}">
+    <div class="checkbox-box filter">
+        <div class="item" data-ajaxurl="${xf.GoAjaxUpdateSelectGameCategories()}">
+            <span>Game Gategory:</span>
+            <ul class="checkbox-list checkbox-filter">
+
+
+                #set($GameCategorys = ${xf.GetViewGameCategorys()})
+                #set($SelectIds = ${xf.GetViewSelectGameCategorys($GameCategorys)})
+                #foreach($GameCategoryItem in $GameCategorys)
+                <li>
+                    <label for="game-gategory-${GameCategoryItem.ID}">
+                        #* Print Icon
+                            #if( ${GameCategoryItem.ID} > 0)
+                                #if(${xf.ViewItemSetting($GameCategoryItem,"IconName","")} != "")
+                                <i class="${xf.ViewItemSetting($GameCategoryItem,"IconName","")} ${xf.ViewItemSetting($GameCategoryItem,"IconSize","")}"></i>
+                                #end
+                            #else
+                                #if(${xf.ViewSetting("General.GameGategoryIconName","")} != "")
+                                <i class="${xf.ViewSetting("General.GameGategoryIconName","")} ${xf.ViewSetting("General.GameGategoryIconSize","")}"></i>
+                                #end
+                            #end
+                        *#
+
+                        
+                        <span>${GameCategoryItem.Name}</span>
+                    </label>
+                    <input id="game-gategory-${GameCategoryItem.ID}" name="game$gategory$${GameCategoryItem.ID}" type="checkbox" value="${GameCategoryItem.ID}" #if(${xf.GameCategoryChecked($SelectIds,$GameCategoryItem)}) checked="checked" #end />
+                </li>
+                #end
+            </ul>
+        </div>
+    </div>
+    <div class="client-zone-carousel">
+        <div class="owl-carousel owl-carousel-zone" data-center="true" data-loop="false" data-autoplay="${xf.ViewSetting("General.RoadmapAutoPlay","true")}" data-autoplayTimeout="${xf.ViewSetting("General.RoadmapPlayInterval","5000")}" data-items="5" data-mobile="1" data-tablet="1" data-desktopSmall="3" data-desktop="3" data-margin="10" data-autoHeight="true">
+
+
+        </div>
+        <script id="client-zone-carousel-tmpl" type="text/x-jquery-tmpl">
+            <div class="item">
+                <div class="pic" style="background-image: url(${Image}); "></div>
+                <div class="content">
+                    <div class="title">${ReleaseDateStr}</div>
+                    <div class="summary">
+                        <div class="category">${TableName}</div>
+                        <div class="info">${Summary}</div>
+                    </div>
+                </div>
+                <a href="${Url}"></a>
+            </div>
+        </script>
+    </div>
+
+    #if( ${xf.ViewSetting("General.EnableProductRoadmapPDF","true")} == "true" )
+    <div class="client-zone-tool">
+        #if( ${xf.ViewSetting("General.PDFPageBreak","true")} == "true" )
+            <a class="sheet btn PDFPageBreak" href="#">${xf.ViewSetting("General.ProductRoadmapPDF","Game Sheet")}<i class="fa fa-print"></i></a>
+        #else
+            <a class="sheet btn" href="#">${xf.ViewSetting("General.ProductRoadmapPDF","Game Sheet")}<i class="fa fa-print"></i></a>
+        #end
+    </div><!-- client-zone-tool End -->
+    #end
+
+    [DynamicModules]
+
+</div>
+
+
+

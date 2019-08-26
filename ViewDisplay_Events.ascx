@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ViewDisplay_Events.ascx.cs" Inherits="Playngo.Modules.ClientZone.ViewDisplay_Events" %>
+<asp:Literal ID="liContentHTML" runat="server"></asp:Literal>

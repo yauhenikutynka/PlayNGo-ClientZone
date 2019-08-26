@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Settings>
+    <Setting>
+      <Name><![CDATA[IconUrl]]></Name>
+      <Alias><![CDATA[Icon]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[Urls]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[U,F]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+  </Settings>
+
+</Playngo_ClientZone>
+
+
+

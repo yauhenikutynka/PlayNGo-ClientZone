@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Settings>
+
+
+
+    <Setting>
+      <Name><![CDATA[UploadFile]]></Name>
+      <Alias><![CDATA[Upload File]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[Urls]]></ControlType>
+      <Direction><![CDATA[1]]></Direction>
+      <ListContent><![CDATA[U,F]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+
+
+
+    <Setting>
+      <Name><![CDATA[IncludeRoadmap]]></Name>
+      <Alias><![CDATA[Include in Roadmap]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Roadmap Options ]]></Group>
+      <Categories><![CDATA[Roadmap Options ]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Image]]></Name>
+      <Alias><![CDATA[Icon]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[Urls]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[U,F]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[true]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Roadmap Options ]]></Group>
+      <Categories><![CDATA[Roadmap Options ]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Summary]]></Name>
+      <Alias><![CDATA[Summary]]></Alias>
+      <Width><![CDATA[550]]></Width>
+      <Rows><![CDATA[5]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[false]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Roadmap Options ]]></Group>
+      <Categories><![CDATA[Roadmap Options ]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+  </Settings>
+
+</Playngo_ClientZone>
+
+
+

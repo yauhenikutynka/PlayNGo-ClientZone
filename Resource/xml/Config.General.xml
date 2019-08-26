@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Config>
+    <Name><![CDATA[General]]></Name>
+    <Alias><![CDATA[General Settings]]></Alias>
+    <Icon><![CDATA[fa fa-wrench]]></Icon>
+    <Description><![CDATA[]]></Description>
+
+  </Config>
+
+
+
+  <Settings>
+
+    <Setting>
+      <Name><![CDATA[ManagerPerPage]]></Name>
+      <Alias><![CDATA[Manager per page]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[10]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[items]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Globals]]></Group>
+      <Categories><![CDATA[Globals]]></Categories>
+    </Setting>
+
+
+
+    <Setting>
+      <Name><![CDATA[ProductRoadmap.Pagings]]></Name>
+      <Alias><![CDATA[ProductRoadmap Display number]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[10]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[items]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Globals]]></Group>
+      <Categories><![CDATA[Globals]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[GameSheets.Pagings]]></Name>
+      <Alias><![CDATA[Game Sheets Paging number]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[12]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[items]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Globals]]></Group>
+      <Categories><![CDATA[Globals]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Downloads.Pagings]]></Name>
+      <Alias><![CDATA[Downloads Paging number]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[12]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[items]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Globals]]></Group>
+      <Categories><![CDATA[Globals]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Campaigns.Pagings]]></Name>
+      <Alias><![CDATA[Campaigns Paging number]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[12]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[items]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Globals]]></Group>
+      <Categories><![CDATA[Globals]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Events.Pagings]]></Name>
+      <Alias><![CDATA[Events Paging number]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[12]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[items]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Globals]]></Group>
+      <Categories><![CDATA[Globals]]></Categories>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[ComingSoonText]]></Name>
+      <Alias><![CDATA[Coming Soon Text]]></Alias>
+      <Width><![CDATA[200]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[Coming Soon]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Globals]]></Group>
+      <Categories><![CDATA[Globals]]></Categories>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[PDFPageBreak]]></Name>
+      <Alias><![CDATA[PDF Page Break]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Globals]]></Group>
+      <Categories><![CDATA[Globals]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+
+    <Setting>
+      <Name><![CDATA[JurisdictionIcon]]></Name>
+      <Alias><![CDATA[All Jurisdiction Icon]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[Urls]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[U,F]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Icon Settings]]></Group>
+      <Categories><![CDATA[Icon Settings]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[FileTypeIconName]]></Name>
+      <Alias><![CDATA[File Type Icon Name]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Icon Settings]]></Group>
+      <Categories><![CDATA[Icon Settings]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[FileTypeIconSize]]></Name>
+      <Alias><![CDATA[File Type Icon Size]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[null or fa-lg ~ fa-5x]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Icon Settings]]></Group>
+      <Categories><![CDATA[Icon Settings]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[GameGategoryIconName]]></Name>
+      <Alias><![CDATA[Game Gategory Icon Name]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Icon Settings]]></Group>
+      <Categories><![CDATA[Icon Settings]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[GameGategoryIconSize]]></Name>
+      <Alias><![CDATA[Game Gategory Icon Size]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[null or fa-lg ~ fa-5x]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Icon Settings]]></Group>
+      <Categories><![CDATA[Icon Settings]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+    
+
+    <!--<Setting>
+      <Name><![CDATA[ExpiryTimeNotification]]></Name>
+      <Alias><![CDATA[Valid time of notification]]></Alias>
+      <Width><![CDATA[50]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[7]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[day]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>-->
+
+
+    <Setting>
+      <Name><![CDATA[MapAPI]]></Name>
+      <Alias><![CDATA[Google Map API]]></Alias>
+      <Width><![CDATA[370]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[YOUR_API_KEY]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+
+    <Setting>
+      <Name><![CDATA[EnableProductRoadmapPDF]]></Name>
+      <Alias><![CDATA[Enable PDF]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Product Roadmap PDF]]></Group>
+      <Categories><![CDATA[Product Roadmap PDF]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[ProductRoadmapPDF]]></Name>
+      <Alias><![CDATA[PDF Generator]]></Alias>
+      <Width><![CDATA[550]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[Game Sheet]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Product Roadmap PDF]]></Group>
+      <Categories><![CDATA[Product Roadmap PDF]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[RoadmapAutoPlay]]></Name>
+      <Alias><![CDATA[Auto Play]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[false]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Product Roadmap Slide]]></Group>
+      <Categories><![CDATA[Product Roadmap Slide]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[RoadmapPlayInterval]]></Name>
+      <Alias><![CDATA[Play Interval]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[5000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[ms]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[number]]></Verification>
+      <Group><![CDATA[Product Roadmap Slide]]></Group>
+      <Categories><![CDATA[Product Roadmap Slide]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+
+
+    <Setting>
+      <Name><![CDATA[DynamicModuleAutoPlay]]></Name>
+      <Alias><![CDATA[Auto Play]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[false]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Dynamic Module Slide]]></Group>
+      <Categories><![CDATA[Dynamic Module Slide]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+    
+    <Setting>
+      <Name><![CDATA[DynamicModulePlayInterval]]></Name>
+      <Alias><![CDATA[Play Interval]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[3000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[ms]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[number]]></Verification>
+      <Group><![CDATA[Dynamic Module Slide]]></Group>
+      <Categories><![CDATA[Dynamic Module Slide]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[EnableHelpPDF]]></Name>
+      <Alias><![CDATA[Enable PDF]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Help PDF]]></Group>
+      <Categories><![CDATA[Help PDF]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[HelpPDF]]></Name>
+      <Alias><![CDATA[PDF Generator]]></Alias>
+      <Width><![CDATA[550]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[Help Guides]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Help PDF]]></Group>
+      <Categories><![CDATA[Help PDF]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    
+    
+
+  </Settings>
+</Playngo_ClientZone>
+
+
+

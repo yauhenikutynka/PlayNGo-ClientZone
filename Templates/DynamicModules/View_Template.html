@@ -1,0 +1,204 @@
+﻿## Dynamic Item [ Text ]  ##
+#macro(ViewDynamicItemText $DynamicItem )
+    <!--Dynamic Item [ Text $DynamicItem.Title ]-->
+    <div>${xf.ViewItemSetting($DynamicItem,"ContentText","")}</div>
+#end
+
+
+
+
+## Dynamic Item [ Image ]  ##
+#macro(ViewDynamicItemImage $DynamicItem )
+    <!--Dynamic Item [ Image $DynamicItem.Title ]-->
+    <div class="client-zone-imgae">
+    #set( $Images = ${xf.GetImages(${xf.ViewItemSetting($DynamicItem,"Images","")})} )
+    #if( $Images.Count > 1 )
+        <div class="owl-carousel nav_fade" data-items="1" data-margin="0" data-autoplay="${xf.ViewSetting("General.DynamicModuleAutoPlay","true")}" data-autoplayTimeout="${xf.ViewSetting("General.DynamicModulePlayInterval","3000")}">
+            #foreach( $item in $Images )
+            <div class="item">
+                <div class="pic">
+                    <img src="${xf.ViewMediaUrl($item)}" title="" alt="">
+                </div>
+            </div>
+            #end
+        </div>
+    #else
+        #if( $Images.Count == 1 )
+            #foreach( $item in $Images )
+            <img src="${xf.ViewMediaUrl($item)}" title="" alt="">
+            #end
+        #end
+    #end
+    </div>
+#end
+
+
+
+## Dynamic Item [ ImageText ]  ##
+#macro(ViewDynamicItemImageText $DynamicItem )
+    <!--Dynamic Item [ ImageText $DynamicItem.Title ]-->
+    <div class="client-zone-description ${xf.ViewItemSetting($DynamicItem,"ContentLayout","")} scale-${xf.ViewItemSetting($DynamicItem,"PercentageLayout","")} ${xf.ViewItemSetting($DynamicItem,"VerticalAlign","")}">
+        <div class="media">
+            #ViewDynamicItemImage($DynamicItem)
+        </div>
+        <div class="text">
+            <div>${xf.ViewItemSetting($DynamicItem,"ContentText","")}</div>
+        </div>
+    </div>
+#end
+
+
+
+## Dynamic Item [ Video ]  ##
+#macro(ViewDynamicItemVideo $DynamicItem )
+    <!--Dynamic Item [ Video $DynamicItem.Title ]-->
+    #set( $background = ${xf.ViewLinkUrl(${xf.ViewItemSetting($DynamicItem,"Image","")})} )
+    #if( $background == "" )
+       #set ( $background = "${Module.ModulePath}Resource/images/gray_1px.jpg" )
+    #end
+
+
+    <div class="client-zone-video" style="background-image: url(${background});">
+        <div class="responsive-video">
+            #if( ${xf.ViewItemSetting($DynamicItem,"VideoSource","")} == "YouTube" )
+                ${xf.ViewItemSetting($DynamicItem,"YouTubeVideoCode","")}
+            #elseif( ${xf.ViewItemSetting($DynamicItem,"VideoSource","")} == "Vimeo" )
+                ${xf.ViewItemSetting($DynamicItem,"VimeoVideoCode","")}
+            #else
+                <video width="1920" height="1080" controls="controls" preload="auto" loop="loop">
+                    <source src="${xf.ViewLinkUrl(${xf.ViewItemSetting($DynamicItem,"UploadVideo","")})}" type="video/mp4"></source>
+                    Your browser does not support the video tag.
+                </video>
+            #end
+        </div>
+    </div>
+#end
+
+## Dynamic Item [ IFrame ]  ##
+#macro(ViewDynamicItemIFrame $DynamicItem )
+    <!--Dynamic Item [ IFrame $DynamicItem.Title ]-->
+    #set( $background = ${xf.ViewLinkUrl(${xf.ViewItemSetting($DynamicItem,"Image","")})} )
+    #if( $background == "" )
+      #set ( $background = "${Module.ModulePath}Resource/images/gray_1px.jpg" )
+    #end
+
+    <div class="client-zone-iframe">
+        <a target="_blank" href="${xf.ViewItemSetting($DynamicItem,"MobileTabletLink","")}" data-url="${xf.ViewItemSetting($DynamicItem,"DesktopLink","")}" style="background-image: url(${background});"></a>
+        <div class="responsive-video"></div>
+    </div>
+
+#end
+
+
+
+
+
+
+    ## Dynamic Item [ Switch ]  ##
+    #macro( ViewDynamicItemSwitch $DynamicItem )
+        #if(${DynamicItem.Type} == 0)
+            #ViewDynamicItemText($DynamicItem)
+
+        #end
+
+        #if(${DynamicItem.Type} == 1)
+            #ViewDynamicItemImage($DynamicItem)
+        #end
+
+        #if(${DynamicItem.Type} == 2)
+            #ViewDynamicItemImageText($DynamicItem)
+        #end
+
+        #if(${DynamicItem.Type} == 3)
+            #ViewDynamicItemVideo($DynamicItem)
+        #end
+
+        #if(${DynamicItem.Type} == 4)
+            #ViewDynamicItemIFrame($DynamicItem)
+        #end
+    #end
+
+
+
+
+
+
+<div class="client-zone-tabs">
+    #if($DynamicModules.Count > 0)
+    <div class="dg-tabs-top dg-tabs-zone">
+        <ul class="resp-tabs-list">
+            #foreach($DynamicModule in $DynamicModules)
+            #if($DynamicModule.IncludeTabLink == 1)
+                #if( $DynamicModule.PDFGenerator == 1 )
+                    #set ($print="Print-PDF")
+                #else
+                    #set ($print="")
+                #end
+                <li class="$print"><span>$DynamicModule.Title</span></li>
+            #end
+            #end
+        </ul>
+        <div class="resp-tabs-container">
+
+            #foreach($DynamicModule in $DynamicModules)
+            #if($DynamicModule.IncludeTabLink == 1)
+                #if( $DynamicModule.PDFGenerator == 1 )
+                    #set ($print=" Print-PDF")
+                #else
+                    #set ($print="")
+                #end
+            <div class="resp_container$print">
+                <div class="resp_margin">
+                    #foreach($DynamicItem in ${xf.FindItemsByDynamicID($DynamicItems,$DynamicModule.ID)})
+                    #set ($class="")
+                    #if(${xf.ViewItemSetting($DynamicItem,"ShowBorder","true")} =="false" )
+                        #set ($class=" no-border")
+                    #end
+                    <div class="tabs-item$class">
+                        #if(${xf.ViewItemSetting($DynamicItem,"ShowTitle","true")} =="true" )
+                        <h3>$DynamicItem.Title</h3>
+                        #end
+                        
+                        ##Show Item
+                        #ViewDynamicItemSwitch($DynamicItem)
+                    </div>
+                    #end
+                </div>
+            </div>
+            #end
+            #end
+        </div>
+    </div>
+    #end
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

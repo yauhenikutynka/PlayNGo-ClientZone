@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Templates>
+
+  <Template Name="Notification.GameSheets" Language="en-US" MailType="1" MailTo="[USER_MAIL]" MailCC="" MailTime="0">
+    <Title><![CDATA[Update: Play'n GO ClientZone Game Sheet]]></Title>
+    <Body>
+      <![CDATA[
+             Dear [User_DISPLAYNAME], <br /><br />
+
+            Updated content is now available in the ClientZone. <br /><br />
+
+            Section: Game Sheet <br />
+            Page: [TITLE] <br />
+
+            <a href="[LINK]">Click here for more info</a>
+
+    ]]></Body>
+  </Template>
+
+  <Template Name="Notification.Downloads" Language="en-US" MailType="1" MailTo="[USER_MAIL]" MailCC="" MailTime="0">
+    <Title><![CDATA[Update: Play'n GO ClientZone Download Files]]></Title>
+    <Body>
+      <![CDATA[
+           Dear [User_DISPLAYNAME], <br /><br />
+
+          New/Updated files are now available in the ClientZone.<br /><br />
+
+          Section: Download<br /><br />
+          File Name: [TITLE]<br /><br />
+          File Type(s): [FILETYPES]<br /><br />
+
+          <a href="[LINK]">Click here for more info</a>
+
+    ]]>
+    </Body>
+  </Template>
+
+  <Template Name="Notification.Campaigns" Language="en-US" MailType="1" MailTo="[USER_MAIL]" MailCC="" MailTime="0">
+    <Title><![CDATA[Update: Play'n GO ClientZone Campaign]]></Title>
+    <Body>
+      <![CDATA[
+             Dear [User_DISPLAYNAME], <br /><br />
+
+            Updated content is now available in the ClientZone. <br /><br />
+
+            Section: Campaign <br />
+            Page: [TITLE] <br />
+
+            <a href="[LINK]">Click here for more info</a>
+
+    ]]>
+    </Body>
+  </Template>
+
+  <Template Name="Notification.Events" Language="en-US" MailType="1" MailTo="[USER_MAIL]" MailCC="" MailTime="0">
+    <Title><![CDATA[Update: Play'n GO ClientZone Event]]></Title>
+    <Body>
+      <![CDATA[
+            Dear [User_DISPLAYNAME], <br /><br />
+
+            Updated content is now available in the ClientZone. <br /><br />
+
+            Section: Event <br />
+            Page: [TITLE] <br />
+
+            <a href="[LINK]">Click here for more info</a>
+    ]]>
+    </Body>
+  </Template>
+ 
+  
+</Templates>
+
+

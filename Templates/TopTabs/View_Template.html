@@ -1,0 +1,7 @@
+﻿#if($TopTabList.Count > 0)
+<ul class="tool-list clearfix">
+    #foreach($TopTabItem in $TopTabList)
+        <li class="tablist-li-${TopTabItem.Token} #if($UIToken==${TopTabItem.Token} ) active #end" ><a href="${xf.GoUiUrl($TopTabItem.Token)}">$TopTabItem.Title</a> <span></span> </li>
+    #end
+</ul>
+#end

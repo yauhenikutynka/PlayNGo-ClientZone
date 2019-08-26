@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Config>
+    <Name><![CDATA[EmalSetting]]></Name>
+    <Alias><![CDATA[Emal Settings]]></Alias>
+    <Icon><![CDATA[fa fa-wrench]]></Icon>
+    <Description><![CDATA[]]></Description>
+    
+  </Config>
+  <Settings>
+    <Setting>
+      <Name><![CDATA[OutboxAddress]]></Name>
+      <Alias><![CDATA[Custom 'From' email address]]></Alias>
+      <Width><![CDATA[300]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[It will read the outbox address in DNN settings if you leave it blank.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[email]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+    
+    
+  </Settings>
+</Playngo_ClientZone>
+
+
+

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Tabs>
+	  <TabItem>
+		  <Token><![CDATA[Settings]]></Token>
+		  <Title><![CDATA[Settings]]></Title>
+		  <Src><![CDATA[Manager_Settings_Display.ascx]]></Src>
+		  <Icon><![CDATA[fa clip-wrench]]></Icon>
+		  <Parent><![CDATA[]]></Parent>
+		  <Visible><![CDATA[true]]></Visible>
+		  <IsAdministrator><![CDATA[false]]></IsAdministrator>
+	  </TabItem>
+
+    <TabItem>
+      <Token><![CDATA[Error]]></Token>
+      <Title><![CDATA[Error]]></Title>
+      <Src><![CDATA[Manager_ErrorCatch.ascx]]></Src>
+      <Icon><![CDATA[clip-globe]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[false]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </Tabs>
+</Playngo_ClientZone>

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Config>
+    <Name><![CDATA[Text]]></Name>
+    <Alias><![CDATA[Text Settings]]></Alias>
+    <Icon><![CDATA[clip-star-5]]></Icon>
+    <Description><![CDATA[]]></Description>
+    
+  </Config>
+  
+  
+  
+  <Settings>
+    <Setting>
+      <Name><![CDATA[Title]]></Name>
+      <Alias><![CDATA[Title]]></Alias>
+      <Width><![CDATA[400]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[ShowTitle]]></Name>
+      <Alias><![CDATA[Show Title]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[ShowBorder]]></Name>
+      <Alias><![CDATA[Show Border]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+
+
+
+
+    <Setting>
+      <Name><![CDATA[ContentLayout]]></Name>
+      <Alias><![CDATA[Text/Image Layout]]></Alias>
+      <Width><![CDATA[400]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[ImageText]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent>
+        <![CDATA[Image Left - Text Right:ImageText|
+        Text Left - Image Right:TextImage]]>
+      </ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[PercentageLayout]]></Name>
+      <Alias><![CDATA[Percentage Layout]]></Alias>
+      <Width><![CDATA[400]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[80-20]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent>
+        <![CDATA[Left 80% - Right 20%:80-20|
+Left 60% - Right 40%:60-40|
+Left 50% - Right 50%:50-50|
+Left 40% - Right 60%:40-60|
+Left 20% - Right 80%:20-80]]>
+      </ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[VerticalAlign]]></Name>
+      <Alias><![CDATA[Vertical Align]]></Alias>
+      <Width><![CDATA[400]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[flex-start]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent>
+        <![CDATA[Top:flex-start|
+Middle:flex-center|
+Bottom:flex-end]]>
+      </ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[Images]]></Name>
+      <Alias><![CDATA[Images]]></Alias>
+      <Width><![CDATA[500]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[Images]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[U,F]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+
+
+
+    <Setting>
+      <Name><![CDATA[ContentText]]></Name>
+      <Alias><![CDATA[Content Text]]></Alias>
+      <Width><![CDATA[620]]></Width>
+      <Rows><![CDATA[6]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[RichTextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+      <Layout><![CDATA[]]></Layout>
+    </Setting>
+    
+    
+  </Settings>
+</Playngo_ClientZone>
+
+
+

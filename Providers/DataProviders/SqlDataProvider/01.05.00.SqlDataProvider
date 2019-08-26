@@ -1,0 +1,38 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+ 
+/** Playngo_ClientZone_RoleGroup  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_RoleGroup]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_RoleGroup](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[RoleId] [int] NOT NULL,
+			[GroupId] [int] NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}Playngo_ClientZone_RoleGroup] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+
+ 
+
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

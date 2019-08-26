@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AuthorRoles.Help" xml:space="preserve">
+    <value>Author permisson needs to give this role to module edit permission, please check setting image&lt;a target="_blank" href="http://www.Playngo.net/images/AuthorRoles.jpg"&gt;[open]&lt;/a&gt;.</value>
+  </data>
+  <data name="AuthorRoles.Text" xml:space="preserve">
+    <value>Author Roles</value>
+  </data>
+  <data name="CustomModels.Help" xml:space="preserve">
+    <value>Enter a model name each line, the model parameter here will show in the event edit interface as the default model name.</value>
+  </data>
+  <data name="CustomModels.Text" xml:space="preserve">
+    <value>Custom models</value>
+  </data>
+  <data name="DisplayExcerpt.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DisplayExcerpt.Text" xml:space="preserve">
+    <value>Display Excerpt</value>
+  </data>
+  <data name="DisplayMoreLink.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DisplayMoreLink.Text" xml:space="preserve">
+    <value>Display "read more" links</value>
+  </data>
+  <data name="DisplayPerPage.Help" xml:space="preserve">
+    <value>items</value>
+  </data>
+  <data name="DisplayPerPage.Text" xml:space="preserve">
+    <value>Display per page</value>
+  </data>
+  <data name="DisplayPicture.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DisplayPicture.Text" xml:space="preserve">
+    <value>Display Picture</value>
+  </data>
+  <data name="EnablePingService.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EnablePingService.Text" xml:space="preserve">
+    <value>Enable Ping Service</value>
+  </data>
+  <data name="EnableStartTime.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EnableStartTime.Text" xml:space="preserve">
+    <value>Enable Start Time</value>
+  </data>
+  <data name="FillExcerpt.Help" xml:space="preserve">
+    <value>When selecting to disaply aricle summary but with summary being not filled, it will use Event details to fill in.</value>
+  </data>
+  <data name="FillExcerpt.Text" xml:space="preserve">
+    <value>Fill Excerpt</value>
+  </data>
+  <data name="General.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="General.Text" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="Group_AuthorSettings.Text" xml:space="preserve">
+    <value>Author Settings</value>
+  </data>
+  <data name="Group_Globals.Text" xml:space="preserve">
+    <value>Globals</value>
+  </data>
+  <data name="Group_RSSFeedSettings.Text" xml:space="preserve">
+    <value>RSS Feed Settings</value>
+  </data>
+  <data name="Group_SitemapSettings.Text" xml:space="preserve">
+    <value>Sitemap Settings</value>
+  </data>
+  <data name="ManagerPerPage.Help" xml:space="preserve">
+    <value>items</value>
+  </data>
+  <data name="ManagerPerPage.Text" xml:space="preserve">
+    <value>Manager per page</value>
+  </data>
+  <data name="ManagerRoles.Help" xml:space="preserve">
+    <value>Fill in the name of user role who can manage the module, type one role name each line. Users who have the access to edit module can only view and use partial function.</value>
+  </data>
+  <data name="ManagerRoles.Text" xml:space="preserve">
+    <value>Manager Module Roles</value>
+  </data>
+  <data name="PingService.Help" xml:space="preserve">
+    <value>When you publish a new Event, ClientZone automatically notifies the following site update services. For more about this, see &lt;a target='_blank' href='http://codex.wordpress.org/Update_Services'&gt;Update Services&lt;/a&gt; on the Codex. Separate multiple service &lt;abbr title='Universal Resource Locator'&gt;URL&lt;/abbr&gt;s with line breaks.</value>
+  </data>
+  <data name="PingService.Text" xml:space="preserve">
+    <value>Ping Service</value>
+  </data>
+  <data name="ReviewNewEvent.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ReviewNewEvent.Text" xml:space="preserve">
+    <value>Review new event</value>
+  </data>
+  <data name="RSSPerPage.Help" xml:space="preserve">
+    <value>items</value>
+  </data>
+  <data name="RSSPerPage.Text" xml:space="preserve">
+    <value>RSS display the latest</value>
+  </data>
+  <data name="RSSStylesheet.Help" xml:space="preserve">
+    <value>E.g. '/DesktopModules/Playngo_ClientZone/Resource/css/rss_style.css'</value>
+  </data>
+  <data name="RSSStylesheet.Text" xml:space="preserve">
+    <value>Rss Stylesheet</value>
+  </data>
+  <data name="RSSStyleXsl.Help" xml:space="preserve">
+    <value>E.g. '/DesktopModules/Playngo_ClientZone/Resource/css/rss_style.xsl'</value>
+  </data>
+  <data name="RSSStyleXsl.Text" xml:space="preserve">
+    <value>Rss Style xsl</value>
+  </data>
+  <data name="Searchable.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Searchable.Text" xml:space="preserve">
+    <value>Searchable</value>
+  </data>
+  <data name="SearchableItems.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SearchableItems.Text" xml:space="preserve">
+    <value>Searchable Items</value>
+  </data>
+  <data name="SitemapChangefreq.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SitemapChangefreq.Text" xml:space="preserve">
+    <value>Sitemap Changefreq</value>
+  </data>
+  <data name="SitemapPerPage.Help" xml:space="preserve">
+    <value>items</value>
+  </data>
+  <data name="SitemapPerPage.Text" xml:space="preserve">
+    <value>Sitemap display the latest</value>
+  </data>
+  <data name="SitemapPriority.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SitemapPriority.Text" xml:space="preserve">
+    <value>Sitemap Priority</value>
+  </data>
+  <data name="SiteMapUrl.Help" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SiteMapUrl.Text" xml:space="preserve">
+    <value>SiteMap Url</value>
+  </data>
+  <data name="RssDescription.Help" xml:space="preserve">
+    <value>Description of rss feeds link. It is optional.</value>
+  </data>
+  <data name="RssDescription.Text" xml:space="preserve">
+    <value>Rss Description</value>
+  </data>
+  <data name="RssTitle.Help" xml:space="preserve">
+    <value>Title of rss feeds link. It is optional,  will replace with module title if leave it blank.</value>
+  </data>
+  <data name="RssTitle.Text" xml:space="preserve">
+    <value>Rss Title</value>
+  </data>
+  <data name="AdvancedPermissions.Help" xml:space="preserve">
+    <value>Advanced permissions for module manager. All menu will be visible to module manager if it is checked.</value>
+  </data>
+  <data name="AdvancedPermissions.Text" xml:space="preserve">
+    <value>Advanced Permissions</value>
+  </data>
+</root>

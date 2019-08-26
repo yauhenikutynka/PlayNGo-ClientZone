@@ -1,0 +1,72 @@
+﻿
+<div class="client-content-events client-zone-ajax" data-ajaxurl="${xf.GoAjaxJSONToEvents()}" data-ajax-search="${xf.GoAjaxSearchToEvents()}">
+    <div class="client-zone-breadcrumb">
+        <a href=""><span class="fa fa-home"></span>Game Events</a>
+    </div><!-- client-zone-breadcrumb End -->
+    <div class="client-zone-filter">
+        <div class="client-zone-search">
+            <div class="client-zone-search-container">
+                <input type="text" placeholder="Search Event">
+                <a href="#" class="fa fa-search"></a>
+                <a href="#" class="fa fa-times"></a>
+            </div>
+        </div>
+        <div class="client-zone-selected">
+            <div class="gameList-style">
+                <a class="active fa fa-th" href="#"></a>
+                <a class="fa fa-th-list" href="#"></a>
+            </div>
+            <div class="gameList-term">
+                <div class="btn-group">
+                    <button class="btn" type="button" data-toggle="dropdown">Sort By</button>
+                    <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        #foreach($SortQueryItem in ${xf.GetViewSortQueryByEvent()})
+                        <li data-sort="${SortQueryItem.Value}"><span>${SortQueryItem.Text}</span></li>
+                        #end
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="client-zone-game">
+        <div class="client-zone-gameList style-grid">
+        </div><!-- client-zone-gameList End-->
+        <script id="client-zone-gameList-tmpl" type="text/x-jquery-tmpl">
+            <div class="gameList-item">
+                <div class="media">
+                    <img src="${Image}" title="${Title}" alt="${Title}">
+                    <span class="${NotificationStatusClass}">${NotificationStatus}</span>
+                    {{if ComingSoonDisplay}}
+                    <span class="comingsoon">${xf.ViewSetting("General.ComingSoonText","Coming Soon")}</span>
+                    {{/if}}
+                    <a href="${Url}"></a>
+                </div>
+                <div class="text">
+                    <div class="address">${Address}</div>
+                    <a href="${Url}" class="name">${Title}</a>
+                    <div class="date">Events Date: ${ReleaseDateString}</div>
+                    <div class="info">{{html ContentTextDecode}}</div>
+                </div>
+            </div>
+        </script>
+        <div class="client-zone-pagenavi">
+            <!--<span class="pages">Page 1 of 6</span>
+            <span aria-current="page" class="page-numbers current">1</span>
+            <a title="Page 2" class="page-numbers" href="#">2</a>
+            <a title="Page 3" class="page-numbers" href="#">3</a>
+            <span class="page-numbers dots">…</span>
+            <a title="Page 6" class="page-numbers" href="#">6</a>
+            <a rel="next" class="next page-numbers" title="Next Page" href="#"><i class="fa fa-angle-right"></i></a>-->
+            <ul class="pagination" id="pagenavi"></ul>
+        </div>
+    </div>
+</div>
+#if($DataList.Count > 0)
+<ul>
+    #foreach($DataItem in $DataList)
+    <li><a href="${xf.GoUrl($DataItem)}">$DataItem.Title</a>   </li>
+    #end
+</ul>
+#end

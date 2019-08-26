@@ -1,0 +1,197 @@
+﻿
+<div class="client-content-downloads client-zone-ajax" data-ajaxurl="${xf.GoAjaxJSONToDownloadFiles()}" data-ajax-search="${xf.GoAjaxSearchToDownloadFiles()}" data-downloadall-url="${xf.GoDownloadSelectsUrl()}">
+    <div class="checkbox-box filter">
+        <div class="item" data-ajaxurl="${xf.GoAjaxUpdateSelectGameCategories()}">
+            <span>Game Gategory:</span>
+            <ul class="checkbox-list checkbox-filter">
+                #set($GameCategorys = ${xf.GetViewGameCategorys()})
+                #set($SelectIds = ${xf.GetViewSelectGameCategorys($GameCategorys)})
+                #foreach($GameCategoryItem in $GameCategorys)
+                <li>
+                    <label for="game-gategory-${GameCategoryItem.ID}">
+                        #* Print Icon
+                            #if( ${GameCategoryItem.ID} > 0)
+                                #if(${xf.ViewItemSetting($GameCategoryItem,"IconName","")} != "")
+                                <i class="${xf.ViewItemSetting($GameCategoryItem,"IconName","")} ${xf.ViewItemSetting($GameCategoryItem,"IconSize","")}"></i>
+                                #end
+                            #else
+                                #if(${xf.ViewSetting("General.GameGategoryIconName","")} != "")
+                                <i class="${xf.ViewSetting("General.GameGategoryIconName","")} ${xf.ViewSetting("General.GameGategoryIconSize","")}"></i>
+                                #end
+                            #end
+                        *#
+                        <span>${GameCategoryItem.Name}</span>
+                    </label>
+                    <input id="game-gategory-${GameCategoryItem.ID}" name="game$gategory$${GameCategoryItem.ID}" type="checkbox" value="${GameCategoryItem.ID}" #if(${xf.GameCategoryChecked($SelectIds,$GameCategoryItem)}) checked="checked" #end />
+                </li>
+                #end
+
+            </ul>
+        </div>
+        <div class="item" data-ajaxurl="${xf.GoAjaxUpdateSelectFileTypes()}">
+            <span>File Types:</span>
+            <ul class="checkbox-list checkbox-filter">
+                #set($FileTypes = ${xf.GetViewFileTypes()})
+                #set($SelectIds = ${xf.GetViewSelectFileTypes($FileTypes)})
+                #foreach($FileTypeItem in $FileTypes)
+                <li>
+                    <label for="file-type-${FileTypeItem.ID}">
+                        #*  Print Icon
+                            #if( ${FileTypeItem.ID} > 0)
+                                #if(${xf.ViewItemSetting($FileTypeItem,"IconName","")} != "")
+                                <i class="${xf.ViewItemSetting($FileTypeItem,"IconName","")} ${xf.ViewItemSetting($FileTypeItem,"IconSize","")}"></i>
+                                #end
+                            #else
+                                #if(${xf.ViewSetting("General.FileTypeIconName","")} != "")
+                                <i class="${xf.ViewSetting("General.FileTypeIconName","")} ${xf.ViewSetting("General.FileTypeIconSize","")}"></i>
+                                #end
+                            #end
+                        *#
+                        <span>${FileTypeItem.Name}</span>
+                    </label>
+                    <input id="file-type-${FileTypeItem.ID}" name="file$type$${FileTypeItem.ID}" type="checkbox" value="${FileTypeItem.ID}" #if(${xf.FileTypeChecked($SelectIds,${FileTypeItem})}) checked="checked" #end />
+                </li>
+                #end
+            </ul>
+        </div>
+    </div>
+    <div class="client-zone-breadcrumb">
+        <a href=""><span class="fa fa-home"></span>Downloads</a>
+    </div><!-- client-zone-breadcrumb End -->
+
+    <div class="client-zone-filter">
+        <div class="client-zone-search">
+            <div class="client-zone-search-container">
+                <input type="text" placeholder="Search Download">
+                <a href="#" class="fa fa-search"></a>
+                <a href="#" class="fa fa-times"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="client-zone-downloads">
+        <table id="table-download" class="table-download" style="width:100%">
+            <thead>
+                <tr>
+                    <th style="width: 1%; white-space: nowrap;">Select <input id="table-download-select" type="checkbox" value=""></th>
+                    <th>Release Date</th>
+                    <th>Name</th>
+                    <th>File Type</th>
+                    <th>Version</th>
+                    <th>Download Link</th>
+                </tr>
+            </thead>
+        </table>
+
+        <div class="client-zone-pagenavi">
+            <a class="table-download-all dg-btn-1 radius-3px btn-accent" href="#">Download All<span class="lnr lnr-download2"></span></a>
+            <ul class="pagination" id="pagenavi"></ul>
+
+            <div class="download-pageLength">
+                <div class="btn-group">
+                    <button class="btn" type="button" data-toggle="dropdown">Items per page</button>
+                    <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li data-pagesize="10"><span>10</span></li>
+                        <li data-pagesize="50"><span>50</span></li>
+                        <li data-pagesize="999"><span>All</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+    <!--<script type="text/javascript">
+        $(document).ready(function () {
+            if ($("#table-download").length == "0") return;
+
+            var oTable = $('#table-download').DataTable({
+                // "processing": true,
+                // "serverSide": true,
+                "responsive": true,
+                "info": false,
+                "sPaginationType": "simple_numbers",
+                "ajax": {
+                    "url": '${xf.GoAjaxJSONToDownloadFiles()}',
+                    "data": function (d) {
+                        d.page = "5";
+
+                    }
+                },
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                "language": {
+                    "search": "",
+                    "lengthMenu": "_MENU_",
+                    "paginate": {
+                        "previous": '<span class="fa fa-angle-left"></span>',
+                        "next": '<span class="fa fa-angle-right"></span>',
+                    }
+                },
+                "columns": [
+                    {
+                        "data": "ID",
+                        "render": function (data, type, full, meta) {
+                            return '<input id="table-download-id-' + data + '" type="checkbox" value="' + data + '">';
+                        }
+                    },
+                    { "data": "ReleaseDateString" },
+                    { "data": "Title" },
+                    { "data": "FileTypes" },
+                    { "data": "Version" },
+                    {
+                        "data": "DownloadUrl",
+                        "render": function (data, type, full, meta) {
+                            return '<a class="table-download-link" href="' + data + '">Download<span class="lnr lnr-download2"></span></a>';
+                        }
+                    }
+
+                ],
+                "columnDefs": [
+                    { "orderable": false, "targets": 0 }
+                ],
+                "deferRender": true
+            });
+
+            // 样式修改
+            var filter_label = $("#table-download_filter>label");
+            var filter_search = filter_label.children();
+            filter_search.attr("placeholder", "Search...");
+            filter_label.addClass('client-zone-search');
+            filter_label.append('<span class="fa fa-search"></span>');
+
+            // 选择
+            var select = $("#table-download-select");
+
+            select.click(function () {
+                var allSelect = $(".client-zone-downloads tbody input[type=checkbox]");
+                if (select.is(':checked')) {
+                    allSelect.prop('checked', true);
+                } else {
+                    allSelect.prop('checked', false);
+                }
+            });
+
+            // 下载
+            var download = $("#table-download-all");
+            download.click(function () {
+                var list = [];
+                var allSelect = $(".client-zone-downloads tbody input[type=checkbox]");
+                allSelect.each(function (index) {
+                    if ($(this).is(':checked')) {
+                        list.push($(this).val());
+                    };
+                });
+                if (list.length != 0) {
+                    alert(list);
+                } else {
+                    alert("请勾选");
+                }
+                return false;
+            });
+
+        });
+
+    </script>-->

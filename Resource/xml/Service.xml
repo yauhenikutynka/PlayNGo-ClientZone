@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <Service>
+    <Token>PictureItem</Token>
+    <Name>PictureItem JSON</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServicePictureItemJSON</typeName>
+  </Service>
+  <Service>
+    <Token>PictureList</Token>
+    <Name>PictureList JSON</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServicePictureListJSON</typeName>
+  </Service>
+
+  <Service>
+    <Token>SelectImages</Token>
+    <Name>Select Images JSON</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceSelectImagesJSON</typeName>
+  </Service>
+
+
+  <Service>
+    <Token>AjaxJSONDownloadFiles</Token>
+    <Name>Ajax Get DownloadFile</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceJSONDownloadFiles</typeName>
+  </Service>
+  <Service>
+    <Token>AjaxJSONCampaigns</Token>
+    <Name>Ajax Get Campaigns</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceJSONCampaigns</typeName>
+  </Service>
+  <Service>
+    <Token>AjaxJSONEvents</Token>
+    <Name>Ajax Get Events</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceJSONEvents</typeName>
+  </Service>
+  <Service>
+    <Token>AjaxJSONGameSheets</Token>
+    <Name>Ajax Get Game-Sheets</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceJSONGameSheets</typeName>
+  </Service>
+  <Service>
+    <Token>AjaxJSONProductRoadmap</Token>
+    <Name>Ajax Get ProductRoadmap</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceJSONProductRoadmap</typeName>
+  </Service>
+
+
+
+  <Service>
+    <Token>AjaxJSONUserJurisdictions</Token>
+    <Name>Ajax Get User Jurisdictions</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceJSONUserJurisdictions</typeName>
+  </Service>
+  <Service>
+    <Token>AjaxJSONUserFileTypes</Token>
+    <Name>Ajax Get User FileTypes</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceJSONUserFileTypes</typeName>
+  </Service>
+  <Service>
+    <Token>AjaxJSONUserGameCategories</Token>
+    <Name>Ajax Get User GameCategories</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceJSONUserGameCategories</typeName>
+  </Service>
+
+  <Service>
+    <Token>AjaxJSONNotifyBadges</Token>
+    <Name>Ajax Get Notify Badges</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceJSONNotifyBadges</typeName>
+  </Service>
+  <Service>
+    <Token>AjaxUpdateMyAccount</Token>
+    <Name>Ajax Update My-Account</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceUpdateMyAccount</typeName>
+    <Login>true</Login>
+  </Service>
+
+
+  <Service>
+    <Token>AjaxUpdateRelationPages</Token>
+    <Name>Ajax Update Relation Pages</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceRelationPageUpdate</typeName>
+    <Login>true</Login>
+  </Service>
+  <Service>
+    <Token>AjaxDeleteRelationPages</Token>
+    <Name>Ajax Delete Relation Pages</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceRelationPageDelete</typeName>
+    <Login>true</Login>
+  </Service>
+  <Service>
+    <Token>AjaxSortRelationPages</Token>
+    <Name>Ajax Sort Relation Pages</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceRelationPageSort</typeName>
+    <Login>true</Login>
+  </Service>
+
+  <Service>
+    <Token>AjaxSearchDownloadFiles</Token>
+    <Name>Ajax Search DownloadFile</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceSearchDownloadFiles</typeName>
+  </Service>
+  <Service>
+    <Token>AjaxSearchCampaigns</Token>
+    <Name>Ajax Search Campaigns</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceSearchCampaigns</typeName>
+  </Service>
+  <Service>
+    <Token>AjaxSearchEvents</Token>
+    <Name>Ajax Search Events</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceSearchEvents</typeName>
+  </Service>
+  <Service>
+    <Token>AjaxSearchGameSheets</Token>
+    <Name>Ajax Search Game-Sheets</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceSearchGameSheets</typeName>
+  </Service>
+
+  <Service>
+    <Token>AjaxSearchUsers</Token>
+    <Name>Ajax Search Users</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceSearchUsers</typeName>
+  </Service>
+
+  <Service>
+    <Token>AjaxSearchGroups</Token>
+    <Name>Ajax Search Groups</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceSearchGroups</typeName>
+  </Service>
+
+
+  <Service>
+    <Token>Thumbnail</Token>
+    <Name>Thumbnail</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceThumbnail</typeName>
+  </Service>
+
+  <Service>
+    <Token>DownloadFile</Token>
+    <Name>DownloadFile</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceDownloadFile</typeName>
+    <Login>true</Login>
+  </Service>
+  <Service>
+    <Token>DownloadFiles</Token>
+    <Name>DownloadFiles</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceDownloadFiles</typeName>
+    <Login>true</Login>
+  </Service>
+
+  <Service>
+    <Token>DownloadCSVToEvent</Token>
+    <Name>Download CSV To Event</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceDownloadCSVToEvent</typeName>
+    <Validate>true</Validate>
+  </Service>
+
+  <Service>
+    <Token>GoItemLinkUrl</Token>
+    <Name>Go ItemLink Url</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceItemLinkUrl</typeName>
+    <Login>true</Login>
+  </Service>
+
+  <Service>
+    <Token>DynamicItemDelete</Token>
+    <Name>DynamicItem Delete</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceDynamicItemDelete</typeName>
+    <Validate>true</Validate>
+  </Service>
+  <Service>
+    <Token>DynamicModuleDelete</Token>
+    <Name>DynamicModule Delete</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceDynamicModuleDelete</typeName>
+    <Validate>true</Validate>
+  </Service>
+
+
+  <Service>
+    <Token>DynamicItemsSort</Token>
+    <Name>DynamicItems Sort</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceDynamicItemsSort</typeName>
+    <Validate>true</Validate>
+  </Service>
+  <Service>
+    <Token>DynamicModulesSort</Token>
+    <Name>DynamicModules Sort</Name>
+    <assemblyName>Playngo.Modules.ClientZone</assemblyName>
+    <typeName>Playngo.Modules.ClientZone.ServiceDynamicModulesSort</typeName>
+    <Validate>true</Validate>
+  </Service>
+</Services>

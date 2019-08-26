@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Config>
+    <Name><![CDATA[AddThis]]></Name>
+    <Alias><![CDATA[AddThis Settings]]></Alias>
+    <Icon><![CDATA[fa fa-share-square-o]]></Icon>
+    <Description><![CDATA[]]></Description>
+    
+  </Config>
+
+
+
+  <Settings>
+    <Setting>
+      <Name><![CDATA[DisplayShare]]></Name>
+      <Alias><![CDATA[Display Sharing Tool]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[SharingTool]]></Name>
+      <Alias><![CDATA[Choose the sharing tool to display the Event]]></Alias>
+      <Width><![CDATA[150]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1]]></DefaultValue>
+      <ControlType><![CDATA[RadioButtonList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent>
+        <![CDATA[fb tw p1 sc[*]addthis/fb_tw_p1_sc.png:1
+        large toolbox[*]addthis/large_toolbox.png:2
+        small toolbox[*]addthis/small_toolbox.png:3
+        button[*]addthis/button.png:4
+        Custom Button:0]]>
+      </ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[CustomSharingTool]]></Name>
+      <Alias><![CDATA[Custom Script]]></Alias>
+      <Width><![CDATA[450]]></Width>
+      <Rows><![CDATA[5]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[SharingToolHelp]]></Name>
+      <Alias><![CDATA[Help]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[Label]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[<a href="https://www.addthis.com/register?profile=wpp" target="_blank">Register</a> for free in-depth analytics reports and better understand your site's social traffic.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Analytics reports]]></Group>
+      <Categories><![CDATA[Analytics reports]]></Categories>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[AddThisProfileID]]></Name>
+      <Alias><![CDATA[Add This ProfileID]]></Alias>
+      <Width><![CDATA[200]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[ra-4fe035a622be51f0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Analytics reports]]></Group>
+      <Categories><![CDATA[Analytics reports]]></Categories>
+    </Setting>
+
+
+
+    <Setting>
+      <Name><![CDATA[OGP_Enable]]></Name>
+      <Alias><![CDATA[Enable]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Open Graph Protocol]]></Group>
+      <Categories><![CDATA[Open Graph Protocol]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[OGP_fb_app_id]]></Name>
+      <Alias><![CDATA[Facebook app_id]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[104274886660131]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Open Graph Protocol]]></Group>
+      <Categories><![CDATA[Open Graph Protocol]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[SummaryNumber]]></Name>
+      <Alias><![CDATA[Summary character number]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[300]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Open Graph Protocol]]></Group>
+      <Categories><![CDATA[Open Graph Protocol]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+    
+    
+  </Settings>
+</Playngo_ClientZone>
+
+
+

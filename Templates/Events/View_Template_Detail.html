@@ -1,0 +1,85 @@
+﻿
+<div class="client-content-events-detail">
+    <div class="client-zone-breadcrumb">
+        <a href="${xf.GoUrl()}"><span class="fa fa-home"></span>Events</a>
+        <span class="separator">/</span>
+        <a href="${xf.GoUrl($DataItem)}">${DataItem.Title}</a>
+    </div><!-- client-zone-breadcrumb End -->
+    <div class="client-zone-tool">
+        #if(${xf.ViewItemSetting($DataItem, "EnableDownloadFiles", "true")} == "true" )
+            #if($DownloadFiles.Count > 0)
+            <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown">${xf.ViewItemSetting($DataItem, "DownloadFiles", "Promo Pack")}<i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu dropdown-bullet">
+                    #foreach($DownloadFile in $DownloadFiles)
+                    <li><a href="${xf.GoDownloadUrl($DownloadFile)}"><span class="lnr lnr-download2"></span>$DownloadFile.Title</a></li>
+                    #end
+                    <li class="divider"></li>
+                    <li><a href="${xf.GoDownloadsUrl($DataItem)}"><span class="lnr lnr-folder-download"></span>Download All</a></li>
+                </ul>
+            </div>
+            #end
+        #end
+    </div><!-- client-zone-tool End -->
+
+
+    <div class="client-zone-info">
+        <div class="item">
+            <div class="title">Date:</div>
+            <div class="info">${DataItem.StartTime.ToString("dddd, MMM %d")}${xf.GetDaySuffix($DataItem.StartTime.Day)}${DataItem.StartTime.ToString(", yyyy")}</div>
+        </div>
+        <div class="item">
+            <div class="title">Location:</div>
+            <div class="info">${DataItem.Address}</div>
+        </div>
+        <div class="item">
+            <div class="title">Opening Time:</div>
+            <div class="info">Open at ${DataItem.LastTime.ToString("hh:mm tt")}</div>
+        </div>
+    </div><!-- client-zone-info End -->
+    <div class="client-zone-details">
+        <h3>${DataItem.Title}</h3>
+        <div class="client-zone-description TextImage flex-start scale-50-50">
+            <div class="media">
+                <div class="client-zone-imgae">
+                    <img src="${xf.ViewLinkUrl($xf.ViewItemSetting($DataItem, "Image", ""))}" title="${DataItem.Title}" alt="${DataItem.Title}" />
+                </div>
+            </div>
+            <div class="text">
+                <p>Dear ${xf.ViewUser($DataItem.CreateUser,"DisplayName")},</p>
+                ${xf.HtmlDecode(${DataItem.ContentText})}
+            </div>
+        </div>
+        #if( $DataItem.LocationX !="" && $DataItem.LocationY !="")
+        <div id="map"></div>
+        #end
+        <!--<div class="text-center">
+            <a class="dg-btn-1 radius-3px btn-accent" href="#">Confirm your attendance</a>
+        </div>-->
+    </div>
+</div>    
+
+#if( $DataItem.LocationX !="" && $DataItem.LocationY !="")
+<script>
+      function initMap() {
+        var myLatLng = {lat: $DataItem.LocationX , lng: $DataItem.LocationY };
+
+        // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 15
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: '${DataItem.Title}'
+        });
+      }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=${xf.ViewSetting("General.MapAPI","YOUR_API_KEY")}&callback=initMap" async defer></script>
+#end
+
+ 

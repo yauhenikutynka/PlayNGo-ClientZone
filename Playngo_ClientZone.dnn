@@ -1,0 +1,179 @@
+﻿<dotnetnuke type="Package" version="5.0">
+	<packages>
+		<package name="Playngo_ClientZone" type="Module" version="01.06.00">
+			<friendlyName>Playngo ClientZone</friendlyName>
+			<description>
+				<![CDATA[
+        ClientZone description ...
+        <br />
+        Support Email: <a  href="mailto:dnnskindev@gmail.com" title="Email">dnnskindev@gmail.com</a> Our Site: <a  target="_blank" href="http://www.dnngo.net" title="Email">www.dnngo.net</a>
+        ]]>
+			</description>
+			<iconFile>DesktopModules/Playngo_ClientZone/Resource/images/logo-modules.png</iconFile>
+			<owner>
+				<name>Playngo.net</name>
+				<organization>Playngo.net Corporation</organization>
+				<url>
+					<![CDATA[http://www.Playngo.net]]>
+				</url>
+				<email>
+					<![CDATA[dnnskindev@gmail.com]]>
+				</email>
+			</owner>
+			<license  src="license.txt" />
+			<releaseNotes src="ReleaseNotes.txt"/>
+			<azureCompatible>true</azureCompatible>
+			<dependencies>
+				<dependency type="CoreVersion">08.00.00</dependency>
+			</dependencies>
+			<components>
+				<component type="Module">
+					<desktopModule>
+						<moduleName>Playngo_ClientZone</moduleName>
+						<foldername>Playngo_ClientZone</foldername>
+						<businessControllerClass>Playngo.Modules.ClientZone.baseController,Playngo.Modules.ClientZone</businessControllerClass>
+						<supportedFeatures>
+							<supportedFeature type="Portable" />
+							<supportedFeature type="Searchable" />
+						</supportedFeatures>
+						<moduleDefinitions>
+							<moduleDefinition>
+								<friendlyName>Playngo_ClientZone</friendlyName>
+								<defaultCacheTime>0</defaultCacheTime>
+								<moduleControls>
+									<moduleControl>
+										<controlKey />
+										<controlSrc>DesktopModules/Playngo_ClientZone/View_Index.ascx</controlSrc>
+										<supportsPartialRendering>False</supportsPartialRendering>
+										<controlTitle />
+										<controlType>View</controlType>
+										<iconFile />
+										<helpUrl />
+										<viewOrder>0</viewOrder>
+									</moduleControl>
+								
+								</moduleControls>
+							</moduleDefinition>
+						</moduleDefinitions>
+					</desktopModule>
+					<eventMessage>
+						<processorType>DotNetNuke.Entities.Modules.EventMessageProcessor, DotNetNuke</processorType>
+						<processorCommand>UpgradeModule</processorCommand>
+						<attributes>
+							<businessControllerClass>Playngo.Modules.ClientZone.baseController,Playngo.Modules.ClientZone</businessControllerClass>
+							<desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
+							<upgradeVersionsList>01.00.00</upgradeVersionsList>
+						</attributes>
+					</eventMessage>
+				</component>
+				<component type="ResourceFile">
+					<resourceFiles>
+						<basePath>DesktopModules\Playngo_ClientZone\</basePath>
+						<resourceFile>
+							<name>ResourceFile.zip</name>
+						</resourceFile>
+					</resourceFiles>
+				</component>
+				<component type="Assembly">
+					<assemblies>
+						<assembly>
+							<path>bin</path>
+							<name>Playngo.Modules.ClientZone.dll</name>
+							<version>01.06.00</version>
+						</assembly>
+						<assembly>
+							<path>bin</path>
+							<name>CNVelocity.dll</name>
+							<version>01.01.00</version>
+						</assembly>
+					</assemblies>
+				</component>
+				<component type="Script">
+					<scripts>
+						<basePath>DesktopModules\Playngo_ClientZone</basePath>
+						<script type="Install">
+							<path>Providers\DataProviders\SqlDataProvider</path>
+							<name>01.00.00.SqlDataProvider</name>
+							<version>01.00.00</version>
+						</script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>01.01.00.SqlDataProvider</name>
+              <version>01.01.00</version>
+            </script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>01.02.00.SqlDataProvider</name>
+              <version>01.02.00</version>
+            </script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>01.05.00.SqlDataProvider</name>
+              <version>01.05.00</version>
+            </script>
+						<script type="UnInstall">
+							<path>Providers\DataProviders\SqlDataProvider</path>
+							<name>Uninstall.SqlDataProvider</name>
+							<version>01.00.00</version>
+						</script>
+					</scripts>
+				</component>
+			</components>
+		</package>
+ 
+    <package name="Playngo_ClientZone_Display" type="Module" version="01.06.00">
+      <friendlyName>Playngo ClientZone Display</friendlyName>
+      <description>
+        <![CDATA[
+        Support Email: <a  href="mailto:dnnskindev@gmail.com" title="Email">dnnskindev@gmail.com</a> Our Site: <a  target="_blank" href="http://www.dnngo.net" title="Email">www.dnngo.net</a>
+        ]]>
+      </description>
+      <iconFile>DesktopModules/Playngo_ClientZone/Resource/images/logo-modules.png</iconFile>
+      <owner>
+        <name>DNNGo.net</name>
+        <organization>DNNGo.net Corporation</organization>
+        <url>
+          <![CDATA[http://www.dnngo.net]]>
+        </url>
+        <email>
+          <![CDATA[dnnskindev@gmail.com]]>
+        </email>
+      </owner>
+      <license  src="license.txt" />
+      <releaseNotes src="ReleaseNotes.txt"/>
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="CoreVersion">08.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>Playngo_ClientZone_Display</moduleName>
+            <foldername>Playngo_ClientZone</foldername>
+            <businessControllerClass />
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Playngo_ClientZone_Display</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/Playngo_ClientZone/View_Display.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+      </components>
+    </package>
+ 
+	</packages>
+</dotnetnuke>

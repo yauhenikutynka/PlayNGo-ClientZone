@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <Setting>
+    <Name>
+      <![CDATA[Events]]>
+    </Name>
+    <Alias><![CDATA[Events]]></Alias>
+    <Description>
+      <![CDATA[]]>
+    </Description>
+    <Version>
+      <![CDATA[01.00.00]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[preview.jpg]]>
+    </Thumbnails>
+    <TemplateScript>
+      <![CDATA[]]>
+    </TemplateScript>
+    <GlobalScript>
+      <![CDATA[]]>
+    </GlobalScript>
+</Setting>
+</Settings>
+ 

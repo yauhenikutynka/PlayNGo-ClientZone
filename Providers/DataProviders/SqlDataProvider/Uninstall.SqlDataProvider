@@ -1,0 +1,64 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Drop FAQs Table **/
+
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Event]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_DownloadFile]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_GameSheet]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Campaign]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_DynamicModule]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_DynamicItem]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_CampaignCategory]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_FileType]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_GameCategory]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Jurisdiction]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Files]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Events_Files]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_MailSetting]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_DownloadRelation
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_RoleGroup
+GO
+ 
+
+ 
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

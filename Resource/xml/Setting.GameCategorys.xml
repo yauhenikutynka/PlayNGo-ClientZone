@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Playngo_ClientZone>
+  <Settings>
+    <Setting>
+      <Name><![CDATA[IconName]]></Name>
+      <Alias><![CDATA[Name]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Icon Settings]]></Group>
+      <Categories><![CDATA[Icon Settings]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[IconSize]]></Name>
+      <Alias><![CDATA[Size]]></Alias>
+      <Width><![CDATA[250]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[null or fa-lg ~ fa-5x]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Icon Settings]]></Group>
+      <Categories><![CDATA[Icon Settings]]></Categories>
+      <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+
+  </Settings>
+
+</Playngo_ClientZone>
+
+
+

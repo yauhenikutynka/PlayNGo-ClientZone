@@ -1,0 +1,118 @@
+﻿
+<div class="client-content-gamesheets client-zone-ajax" data-ajaxurl="${xf.GoAjaxJSONToGameSheets()}" data-ajax-search="${xf.GoAjaxSearchToGameSheets()}">
+    <div class="checkbox-box filter">
+        <div class="item" data-ajaxurl="${xf.GoAjaxUpdateSelectGameCategories()}">
+            <span>Game Gategory:</span>
+            <ul class="checkbox-list checkbox-filter">
+                #set($GameCategorys = ${xf.GetViewGameCategorys()})
+                #set($SelectIds = ${xf.GetViewSelectGameCategorys($GameCategorys)})
+                #foreach($GameCategoryItem in $GameCategorys)
+                <li>
+                    <label for="game-gategory-${GameCategoryItem.ID}">
+                        #* Print Icon
+                            #if( ${GameCategoryItem.ID} > 0)
+                                #if(${xf.ViewItemSetting($GameCategoryItem,"IconName","")} != "")
+                                <i class="${xf.ViewItemSetting($GameCategoryItem,"IconName","")} ${xf.ViewItemSetting($GameCategoryItem,"IconSize","")}"></i>
+                                #end
+                            #else
+                                #if(${xf.ViewSetting("General.GameGategoryIconName","")} != "")
+                                <i class="${xf.ViewSetting("General.GameGategoryIconName","")} ${xf.ViewSetting("General.GameGategoryIconSize","")}"></i>
+                                #end
+                            #end
+                        *#
+                        
+                        <span>${GameCategoryItem.Name}</span>
+                    </label>
+                    <input id="game-gategory-${GameCategoryItem.ID}" name="game$gategory$${GameCategoryItem.ID}" type="checkbox" value="${GameCategoryItem.ID}" #if(${xf.GameCategoryChecked($SelectIds,$GameCategoryItem)}) checked="checked" #end />
+
+                </li>
+                #end
+            </ul>
+        </div>
+    </div>
+    <div class="client-zone-breadcrumb">
+        <a href=""><span class="fa fa-home"></span>Game Sheets</a>
+    </div><!-- client-zone-breadcrumb End -->
+    <div class="client-zone-filter">
+        <div class="client-zone-search">
+            <div class="client-zone-search-container">
+                <input type="text" placeholder="Search Game Sheet">
+                <a href="#" class="fa fa-search"></a>
+                <a href="#" class="fa fa-times"></a>
+            </div>
+        </div>
+        <div class="client-zone-selected">
+            <div class="gameList-style">
+                <a class="active fa fa-th" href="#"></a>
+                <a class="fa fa-th-list" href="#"></a>
+            </div>
+            <div class="gameList-term">
+                <div class="btn-group">
+                    <button class="btn" type="button" data-toggle="dropdown">Sort By</button>
+                    <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        #foreach($SortQueryItem in ${xf.GetViewSortQueryByGame()})
+                        <li data-sort="${SortQueryItem.Value}"><span>${SortQueryItem.Text}</span></li>
+                        #end
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="client-zone-game">
+        <div class="client-zone-gameList style-grid">
+        </div><!-- client-zone-gameList End-->
+        <script id="client-zone-gameList-tmpl" type="text/x-jquery-tmpl">
+            <div class="gameList-item">
+                <div class="media">
+                    <img src="${Image}" title="${Title}" alt="${Title}">
+                    <span class="${NotificationStatusClass}">${NotificationStatus}</span>
+                    {{if ComingSoonDisplay}}
+                    <span class="comingsoon">${xf.ViewSetting("General.ComingSoonText","Coming Soon")}</span>
+                    {{/if}}
+                    <a href="${Url}"></a>
+                </div>
+                <div class="text">
+                    <a href="${Url}" class="name">${Title}</a>
+                    {{if GameID != ""}}
+                    <div class="id">Game ID Desktop: ${GameID}</div>
+                    {{/if}}
+                    {{if GameID_Mobile != ""}}
+                    <div class="id">Game ID Mobile: ${GameID_Mobile}</div>
+                    {{/if}}
+                    <div class="date">Release Date: ${ReleaseDateString}</div>
+                    <div class="info">{{html Summary}}</div>
+                </div>
+            </div>
+        </script>
+        <div class="client-zone-pagenavi">
+            <!--<span class="pages">Page 1 of 6</span>
+        <span aria-current="page" class="page-numbers current">1</span>
+        <a title="Page 2" class="page-numbers" href="#">2</a>
+        <a title="Page 3" class="page-numbers" href="#">3</a>
+        <span class="page-numbers dots">…</span>
+        <a title="Page 6" class="page-numbers" href="#">6</a>
+        <a rel="next" class="next page-numbers" title="Next Page" href="#"><i class="fa fa-angle-right"></i></a>-->
+            <ul class="pagination" id="pagenavi"></ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    #if($DataList.Count > 0)
+    <ul>
+        #foreach($DataItem in $DataList)
+        <li><a href="${xf.GoUrl($DataItem)}">$DataItem.Title</a>   </li>
+        #end
+    </ul>
+    #end
+
+
+
+
+

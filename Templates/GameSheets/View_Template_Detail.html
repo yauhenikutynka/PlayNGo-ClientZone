@@ -1,0 +1,93 @@
+﻿
+<div class="client-content-gamesheets-detail">
+    <div class="client-zone-breadcrumb">
+        <a href="${xf.GoUrl()}"><span class="fa fa-home"></span>Game Sheets</a>
+        <span class="separator">/</span>
+        <a href="${xf.GoUrl($DataItem)}">${DataItem.Title}</a>
+    </div><!-- client-zone-breadcrumb End -->
+    <div class="client-zone-tool">
+        #if( ${xf.ViewSetting("General.PDFPageBreak","true")} == "true" )
+        <a class="sheet btn PDFPageBreak" href="#">${xf.ViewItemSetting($DataItem, "PDFGenerator", "Game Sheet")}<i class="fa fa-print"></i></a>
+        #else
+        <a class="sheet btn" href="#">${xf.ViewItemSetting($DataItem, "PDFGenerator", "Game Sheet")}<i class="fa fa-print"></i></a>
+        #end
+        #if(${xf.ViewItemSetting($DataItem, "EnableDownloadFiles", "true")} == "true" )
+            #if($DownloadFiles.Count > 0)
+            <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown">${xf.ViewItemSetting($DataItem, "DownloadFiles", "Promo Pack")}<i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu dropdown-bullet">
+                    #foreach($DownloadFile in $DownloadFiles)
+                    <li><a href="${xf.GoDownloadUrl($DownloadFile)}"><span class="lnr lnr-download2"></span>$DownloadFile.Title</a></li>
+                    #end
+                    <li class="divider"></li>
+                    <li><a href="${xf.GoDownloadsUrl($DataItem)}"><span class="lnr lnr-folder-download"></span>Download All</a></li>
+                </ul>
+            </div>
+            #end
+        #end
+
+
+    </div><!-- client-zone-tool End -->
+
+    <div class="client-zone-info">
+        #if(${DataItem.Version} != "" )
+        <div class="item">
+            <div class="title">Version:</div>
+            <div class="info">${DataItem.Version}</div>
+        </div>
+        #end
+        #if(${xf.ViewItemSetting($DataItem, "Confidentiality", "")} != "" )
+        <div class="item">
+            <div class="title">Confidentiality:</div>
+            <div class="info">${xf.ViewItemSetting($DataItem, "Confidentiality", "")}</div>
+        </div>
+        #end
+        #if(${xf.ViewItemSetting($DataItem, "Createdby", "")} != "" )
+        <div class="item">
+            <div class="title">Created by:</div>
+            <div class="info">${xf.ViewItemSetting($DataItem, "Createdby", "")}</div>
+        </div>
+        #end
+        <div class="item">
+            <div class="title">Release Date:</div>
+            <div class="info">${DataItem.ReleaseDate.ToString("yyyy-MM-dd")}</div>
+        </div>
+        #if(${DataItem.GameID} != "" )
+        <div class="item">
+            <div class="title">Game ID Desktop:</div>
+            <div class="info">${DataItem.GameID}</div>
+        </div>
+        #end
+        #if(${DataItem.GameID_Mobile} != "" )
+        <div class="item">
+            <div class="title">Game ID Mobile:</div>
+            <div class="info">${DataItem.GameID_Mobile}</div>
+        </div>
+        #end
+        #if(${xf.ViewItemSetting($DataItem, "Ownedby", "")} != "" )
+            <div class="item">
+                <div class="title">Owned by :</div>
+                <div class="info">${xf.ViewItemSetting($DataItem, "Ownedby", "")}</div>
+            </div>
+        #end
+        <div class="item">
+            <div class="title">Last Updated:</div>
+            <div class="info">${DataItem.LastTime.ToString("yyyy-MM-dd")}</div>
+        </div>
+        #if(${xf.ViewItemSetting($DataItem, "ApprovedId", "")} != "" )
+        <div class="item">
+            <div class="title">Approved ID:</div>
+            <div class="info">${xf.ViewItemSetting($DataItem, "ApprovedId", "")}</div>
+        </div>
+        #end
+        #if(${xf.ViewItemSetting($DataItem, "DocumentId", "")} != "" )
+        <div class="item">
+            <div class="title">Document ID:</div>
+            <div class="info">${xf.ViewItemSetting($DataItem, "DocumentId", "")}</div>
+        </div>
+        #end
+    </div><!-- client-zone-info End -->
+    [DynamicModules]
+
+
+</div>

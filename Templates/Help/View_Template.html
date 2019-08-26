@@ -1,0 +1,12 @@
+﻿<div class="client-content-help client-zone-ajax">
+    #if( ${xf.ViewSetting("General.EnableHelpPDF","true")} == "true" )
+    <div class="client-zone-tool">
+        #if( ${xf.ViewSetting("General.PDFPageBreak","true")} == "true" )
+        <a class="sheet btn PDFPageBreak" href="#">${xf.ViewSetting("General.HelpPDF","Help Guides")}<i class="fa fa-print"></i></a>
+        #else
+        <a class="sheet btn" href="#">${xf.ViewSetting("General.HelpPDF","Help Guides")}<i class="fa fa-print"></i></a>
+        #end
+    </div><!-- client-zone-tool End -->
+    #end
+    [DynamicModules]
+</div>

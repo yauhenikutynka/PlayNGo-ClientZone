@@ -1,0 +1,41 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** ALTER Table **/
+
+ 
+ 
+/** ALTER Playngo_ClientZone_GameSheet  **/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_GameSheet]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_GameSheet] ADD
+		[GameID_Mobile] [nvarchar](200) NULL
+END
+GO
+
+
+
+
+/** ALTER Playngo_ClientZone_Campaign  **/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Playngo_ClientZone_Campaign]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}Playngo_ClientZone_Campaign] ADD
+		[GameID_Mobile] [nvarchar](200) NULL
+END
+GO
+ 
+
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+
